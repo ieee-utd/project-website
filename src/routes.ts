@@ -1,9 +1,9 @@
 import PageIndex from "./pages/PageIndex.svelte";
 import PageNotFound from "./pages/PageNotFound.svelte";
-import Programs from "./pages/Programs.svelte";
+import PagePrograms from "./pages/PagePrograms.svelte";
 
 export const routes = {
-  '/': PageIndex,
-  '/programs': Programs,
+  "/": PageIndex,
+  "/programs": PagePrograms,
   "*": PageNotFound
 };
