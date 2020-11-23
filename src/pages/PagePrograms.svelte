@@ -10,26 +10,22 @@
     margin: 0;
     align-items: center;
   }
-
   .container {
     font-family: Roboto;
     align-items: center;
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
   }
-
   .content {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
   }
-
   .title {
     padding-left: 20%;
     padding-right: 20%;
     color: white;
   }
-
   .hero-image {
     background-image: url("../ui/img/forge-background.jpg");
     background-repeat: no-repeat;
