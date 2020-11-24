@@ -1,6 +1,7 @@
 <script>
 import App from "../App.svelte";
 
+// import navbar from "../src/elements/navbar.svelte";
 
   export let mesg;
   console.log(mesg);
