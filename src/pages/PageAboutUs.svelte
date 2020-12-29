@@ -1,7 +1,7 @@
 <script>
 import App from "../App.svelte";
-
-import navbar from "./elements/navbar.svelte";
+// @ts-ignore
+import navbar from "../elements/navbar.svelte"
 
   export let mesg;
   console.log(mesg);
