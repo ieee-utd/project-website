@@ -1,8 +1,4 @@
 <script>
-import App from "../App.svelte";
-// @ts-ignore
-import navbar from "../elements/navbar.svelte"
-
   export let mesg;
   console.log(mesg);
   //   let src = "./ui/img/forge-aboutus.jpg";

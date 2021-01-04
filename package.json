@@ -8,7 +8,7 @@
     "deploy": "yarn build && surge public",
     "build": "rollup -c && cp public/index.html public/404.html",
     "dev": "rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv public -s",
     "validate": "svelte-check",
     "precommit": "lint-staged"
   },
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",
-    "svelte-spa-router": "^3.0.5"
+    "svelte-router-spa": "^5.8.3"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",

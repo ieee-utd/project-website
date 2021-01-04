@@ -2219,6 +2219,13 @@ svelte-preprocess@^4.0.0, svelte-preprocess@~4.3.0:
     detect-indent "^6.0.0"
     strip-indent "^3.0.0"
 
+svelte-router-spa@^5.8.3:
+  version "5.8.3"
+  resolved "https://registry.yarnpkg.com/svelte-router-spa/-/svelte-router-spa-5.8.3.tgz#a4b0a3981b9a8d686f413edf89e95d4e3aa03dca"
+  integrity sha512-sZhXKjDpnJDtRu4YWw/O/W+d7MSL3i0W5T/FzkDq5qS6RM9d4PaEDgaAXOUliptPKIotZddT1cl1LsY2iuFFWw==
+  dependencies:
+    url-params-parser "^1.0.3"
+
 svelte-spa-router@^3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/svelte-spa-router/-/svelte-spa-router-3.0.5.tgz#097506578ac2371c9556b9789bd397d408968d92"
@@ -2371,6 +2378,11 @@ uri-js@^4.2.2:
   integrity sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   dependencies:
     punycode "^2.1.0"
+
+url-params-parser@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/url-params-parser/-/url-params-parser-1.0.3.tgz#f99940c575705835049ab223b349fe2575a78ee5"
+  integrity sha512-PLyEzfi+ymsvG8FYSNwvUG6LT/AM7ApWcRgF4EVEb+4Vlf7MkIEbdMjunLaXuTRl7YwZDRoyZaez8Y1AGLuALA==
 
 url-parse-as-address@1.0.0:
   version "1.0.0"

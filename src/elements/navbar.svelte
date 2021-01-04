@@ -5,10 +5,7 @@
     import PagePrograms from "../pages/PagePrograms.svelte";
     import PageTutoring from "../pages/PageTutoring.svelte";
     import PageHKN from "../pages/PageHKN.svelte";
-	import PageContact from "../pages/PageContact.svelte";
-	
-	import App from "../App.svelte";
-
+		import PageContact from "../pages/PageContact.svelte";
     export let menu = 1;
 </script>
 
