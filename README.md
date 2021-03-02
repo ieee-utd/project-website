@@ -1,21 +1,21 @@
 # project-website
 
-# Install via npm 
+#Install via npm 
 --> npm install -g yarn 
 
-# Mac users
+#Mac users
 --> sudo npm install -g yarn 
 
-# Check version
+#Check version
 --> yarn -v
 
-# Create yarn.lock file 
+#Create yarn.lock file 
 --> yarn import 
 
-# Run Script
+#Run Script
 --> yarn run dev
 
-# Get help
+#Get help
 --> yarn help 
   (this will give all the different commands that are available)
   
