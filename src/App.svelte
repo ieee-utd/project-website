@@ -1,7 +1,9 @@
 <script>
   import { Router } from "svelte-router-spa";
   import { routes } from "./routes";
-  import Navbar from "./elements/navbar.svelte";
+  import Navbar from "./components/Navbar/navbar.svelte";
+  let menu = 1;
 </script>
-<Navbar/>
-<Router {routes} />
+<div>
+  <Router {routes} />
+</div>

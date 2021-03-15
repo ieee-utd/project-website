@@ -1,19 +1,18 @@
 <script>
-  export let mesg;
-  console.log(mesg);
-  let src = "./util/img/forge-background.jpg";
+  import Banner from '../components/Banner/banner.svelte';
+  let picDir = '../ui/img/forge-program.jpg';
+  let title = 'program';
 </script>
 
 <style>
   main {
     max-width: auto;
     margin: 0;
-    align-items: center;
+    align-items: center;    
   }
   .container {
     font-family: Roboto;
     align-items: center;
-    /* background-color: rgb(243, 243, 243); */
   }
   .content {
     padding-left: 20%;
@@ -27,7 +26,7 @@
     color: white;
   }
   .hero-image {
-    background-image: url("../ui/img/forge-background.jpg");
+    background-image: url("../ui/img/forge-.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,11 +35,7 @@
 </style>
 
 <main>
-  <div class="hero-image">
-    <div class="title">
-      <h1>Programs</h1>
-    </div>
-  </div>
+<Banner {picDir} {title} />
 
   <div class="container">
     <div class="content">
