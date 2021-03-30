@@ -1,21 +1,28 @@
+<script>
+    import {routeIsActive} from "svelte-router-spa";
+</script>
+
 <div class="nav-center">
     <ul id="menu">
         <li><a href="/" class ="nav-logo"> <img src="../ui/img/IEEE-logo.svg" class = "logo" alt="logo" /></a></li>
-        <li><a href= "/" class="nav-link">Home</a></li>
-        <li><a href= "/AboutUs" class="nav-link">About us</a></li>
-        <li><a href= "/ourTeam" class="nav-link">Our Team</a></li>
-        <li><a href= "/programs" class="nav-link">Programs</a></li>
-        <li><a href= "/tutoring" class="nav-link">Tutoring</a></li>
-        <li><a href= "/hkn" class="nav-link">HKN</a></li>
-        <li><a href= "/contact"class="nav-link">Contact</a></li>
+        <li><a href= "/" class="nav-link" class:active={routeIsActive('/')}>Home</a></li>
+        <li><a href= "/aboutus" class="nav-link "class:active={routeIsActive('/aboutus')}>About us</a></li>
+        <li><a href= "/ourTeam" class="nav-link" class:active={routeIsActive('/ourTeam')}>Our Team</a></li>
+        <li><a href= "/programs" class="nav-link" class:active={routeIsActive('/programs')}>Programs</a></li>
+        <li><a href= "/tutoring" class="nav-link" class:active={routeIsActive('/tutoring')}>Tutoring</a></li>
+        <li><a href= "/hkn" class="nav-link" class:active={routeIsActive('/hkn')}>HKN</a></li>
+        <li><a href= "/contact"class="nav-link" class:active={routeIsActive('/contact')}>Contact</a></li>
     </ul>
 </div>
 <style>
+    .active{
+        color:var(--color-accent)!important;
+    }
     .nav-center{
 		font-size: 1.3rem;
 		font-weight: 600;
 		text-align: center;
-		padding-top: 1rem;
+		
 	}
     .logo{
         display:inline-block;
@@ -31,6 +38,6 @@
     transition: 1s ease-in linear;
     }
     .nav-link:hover{
-        color:rgb(235, 235, 235);
+        color:var(--color-accent);
     }
 </style>

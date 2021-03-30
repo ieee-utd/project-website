@@ -1,18 +1,20 @@
 <script>
-	import Banner from '../Banner/banner.svelte'
 	import SmallNav from "./smallNavBar.svelte"
 	import BigNav from "./bigNavBar.svelte"
-    let menu = 1;
 	let screenWidth;
 </script>
 
 <style>
+
 	nav{
-		background: transparent;
+		background:transparent;
+		z-index: 3;
+		position: absolute;
+		left:25%;
 	}
 	
 </style>
-<svelte:window bind:innerWidth={screenWidth} />;
+<svelte:window bind:innerWidth={screenWidth} />
 <nav class="nav">
 		{#if screenWidth > 773}
 			 <BigNav />
