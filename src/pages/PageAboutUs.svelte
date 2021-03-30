@@ -4,15 +4,13 @@
   import NavigationBtn from "../components/navigationBtn.svelte"
   let list = ["#mission" , "/programs#history"]
   let picDir = "../ui/img/forge-about-us.jpg";
+  let title = "about";
+  let subtitle = "us";
 </script>
 
 <main id="about">
    <NavigationBtn {list} />
-  <header class = "banner" >
-    <Navbar />
-    <h1 class = "banner-title" 
-    >about <span class = "banner-subtitle">us</span></h1>
-  </header>
+<Banner {picDir} {title} id = "top"/>
   <section class="mission section" id = "mission">
     <div class="section-center">
       <div class="img-container">
@@ -60,33 +58,8 @@
 
 <style>
 
- .banner-title {
-    color: #ffff;
-    letter-spacing: 5px;
-    font-size:3.5rem;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-transform: uppercase;
 
-  }
-  .banner-subtitle{
-    color:#E88F0C;
-  }
 
-  .banner{
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.6) , rgba(0,0,0,0.3)),url("../ui/img/forge-about-us.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    position: relative;
-    padding: 1rem 3rem ;
-  }
   .section {
     padding: 3rem;
     margin-bottom: 2rem;
@@ -97,7 +70,6 @@
     /* background: linear-gradient(165deg, rgba(207,134,27,0.8685224089635855) 36%, rgba(6,2,71,0.8836485277704832) 62%); */
   }
   .img-container {
-    
     margin: 1rem 0;
     max-width:587px;
   }
@@ -143,18 +115,6 @@
       align-items: center;
       justify-content: center;
       grid-column-gap: 40px;
-    }
-  }
-  /* Banner setting */
-    @media screen and (max-width:687px){
-    .banner{
-      height:30vh;
-    }
-    .banner-title{
-      transform: translate(0,0);
-      left: 3rem;
-      bottom: 2rem;
-      font-size: 2rem;
     }
   }
 </style>
