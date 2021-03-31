@@ -1,6 +1,6 @@
 <script>
  import {fly} from 'svelte/transition';
- import { mdiFacebook,mdiDiscord,mdiTwitter, mdiInstagram} from '@mdi/js';
+ import { mdiFacebook,mdiDiscord,mdiTwitter, mdiInstagram, mdiLinkedin} from '@mdi/js';
  import MdiIcon from "./MdiIcon.svelte"
 </script>
 <footer class="footer">
@@ -16,6 +16,7 @@
    <a href="https://discord.com/" target="_blank"><MdiIcon icon={mdiDiscord}  class = "icon"></MdiIcon></a>
    <a href="https://twitter.com/" target="_blank"><MdiIcon icon={mdiTwitter}  class = "icon"></MdiIcon></a>
    <a href="https://www.instagram.com/" target="_blank"><MdiIcon icon={mdiInstagram}  class = "icon"></MdiIcon></a>
+   <a href="https://www.linkedin.com/" target="_blank"><MdiIcon icon={mdiLinkedin}  class = "icon"></MdiIcon></a>
    <p class = "copyright">&copy; 2021 IEEE UTD. All rights reserved</p>
 
   </div>
