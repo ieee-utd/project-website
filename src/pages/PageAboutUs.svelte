@@ -2,7 +2,7 @@
   import Banner from "../components/Banner/banner.svelte"
   import Navbar from "../components/Navbar/navbar.svelte"
   import NavigationBtn from "../components/navigationBtn.svelte"
-  let list = ["#mission" , "/programs#history"]
+  let list = ["#mission" , "#history"]
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about";
   let subtitle = "us";
@@ -10,7 +10,7 @@
 
 <main id="about">
    <NavigationBtn {list} />
-<Banner {picDir} {title} id = "top"/>
+<Banner {picDir} {title}{subtitle} id = "top"/>
   <section class="mission section" id = "mission">
     <div class="section-center">
       <div class="img-container">

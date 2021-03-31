@@ -10,7 +10,7 @@ export let list = [];
 <div class="dropdown" class:show-menu={y>250}>
   <button class="dropbtn"><MdiIcon icon={mdiArrowUpBold} class = "icon"></MdiIcon></button>
     <div class="dropdown-content">
-    <a href = "#" on:click={() => animateScroll.scrollToBottom()}> Bottom </a> 
+    <a  on:click={() => animateScroll.scrollToBottom()}> Bottom </a> 
     {#each list as item}
       <a on:click={() => animateScroll.scrollTo({element:item})}> Scroll to {item.slice(1)} </a> 
     {/each}

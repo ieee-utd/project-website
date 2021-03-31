@@ -17,6 +17,7 @@
    <a href="https://twitter.com/" target="_blank"><MdiIcon icon={mdiTwitter}  class = "icon"></MdiIcon></a>
    <a href="https://www.instagram.com/" target="_blank"><MdiIcon icon={mdiInstagram}  class = "icon"></MdiIcon></a>
    <p class = "copyright">&copy; 2021 IEEE UTD. All rights reserved</p>
+
   </div>
 </footer>
 
@@ -51,6 +52,10 @@ color:#222;
 text-transform: capitalize;
 text-align: center;
 padding-bottom:2rem;
+}
+.icon{
+  width:5rem;
+  height:5rem;
 }
 .copyright{
  margin-top:1rem;

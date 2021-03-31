@@ -28,7 +28,7 @@
 
   }
   .subtitle{
-    color:var(--color-white);
+    color:var(--color-primary);
   }
   .banner-photo{
     width:100%;
