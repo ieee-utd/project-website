@@ -7,8 +7,8 @@
  <div class="sponsor-logo-container">
   <p class ="title center">Thank you to the IEEE UTD sponsors</p>
   <div class="container-wrapper">
-  <img src="../ui/img/murata.png" alt=""  class = "logo">
   <img src="../ui/img/texas-instrument.jpg" alt="" class = "logo">
+  <img src="../ui/img/murata.png" alt=""  class = "logo">
   </div>
  </div>
   <div class="socials-container" >

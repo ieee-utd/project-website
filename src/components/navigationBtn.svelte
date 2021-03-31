@@ -1,12 +1,14 @@
 <script>
 import * as animateScroll from "svelte-scrollto";
+import { mdiArrowUpBold } from '@mdi/js';
+import MdiIcon from "./MdiIcon.svelte"
 export let list = [];
  let y;
 </script>
 <svelte:window bind:scrollY={y}/>
 
 <div class="dropdown" class:show-menu={y>250}>
-  <button class="dropbtn"><i class="fas fa-arrow-up icon"></i></button>
+  <button class="dropbtn"><MdiIcon icon={mdiArrowUpBold} class = "icon"></MdiIcon></button>
     <div class="dropdown-content">
     <a href = "#" on:click={() => animateScroll.scrollToBottom()}> Bottom </a> 
     {#each list as item}
@@ -63,7 +65,9 @@ export let list = [];
   transform:translateX(5px);
   background:var(--color-orange-complement);
   }
-
+.icon{
+  color:red;
+}
 .dropdown:hover .dropdown-content {
   display: block;
   }
