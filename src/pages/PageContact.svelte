@@ -65,7 +65,7 @@
 </main> 
 <style>
  main{
-  padding:1.5rem;
+  padding:3.5rem;
  }
  .contact-notification{
   font-weight: 400;
