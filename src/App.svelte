@@ -25,7 +25,7 @@
     --font-head: "Rubik";
     --font-main: "Roboto", sans-serif;
     --font-mono: "Roboto Mono", monospace;
-    --transition: all 0.5s linear;
+    --transition: all 0.5s ease-in-out;
     --spacing: 0.5;
     --line-height: 1.2;
     --radius: 0.5rem;
