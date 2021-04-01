@@ -1,17 +1,77 @@
 <script>
-  import Banner from "../components/Banner/banner.svelte"
-  import Navbar from "../components/Navbar/navbar.svelte"
-  import NavigationBtn from "../components/navigationBtn.svelte"
-  let list = ["#mission" , "#history"]
+  import Banner from "../components/Banner/banner.svelte";
+  import Navbar from "../components/Navbar/navbar.svelte";
+  import NavigationBtn from "../components/navigationBtn.svelte";
+  let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about";
   let subtitle = "us";
 </script>
 
+<style>
+  .section {
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .mission {
+    background: var(--color-white);
+  }
+  .img-container {
+    max-width: 587px;
+  }
+  .photo {
+    width: 100%;
+  }
+  .content {
+    margin-top: 1rem;
+  }
+  .title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-family: "Rubik", sans-serif;
+    color: #060247;
+    margin-bottom: 2rem;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
+      no-repeat;
+    transition: 0.5s;
+  }
+  .title:hover {
+    --d: 50%;
+  }
+
+  .history .content p {
+    color: black;
+  }
+  .content p {
+    font-family: "Rubik", sans-serif;
+    line-height: 2.2;
+    color: black;
+    font-family: "Lato", sans-serif;
+  }
+  @media screen and (min-width: 776px) {
+    .section {
+      padding: 3rem 4rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      grid-column-gap: 40px;
+    }
+  }
+</style>
+
 <main id="about">
-   <NavigationBtn {list} />
-<Banner {picDir} {title}{subtitle} id = "top"/>
-  <section class="mission section" id = "mission">
+  <NavigationBtn {list} />
+  <Banner {picDir} {title} {subtitle} id="top" />
+  <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
         <img src="../ui/img/statement.jpeg" class="photo" alt="statement" />
@@ -34,7 +94,7 @@
     </div>
   </section>
   <!-- history -->
-  <section class="history section" id ="history">
+  <section class="history section" id="history">
     <div class="section-center">
       <div class="content">
         <h3 class="title">History</h3>
@@ -53,68 +113,4 @@
       </div>
     </div>
   </section>
-
 </main>
-
-<style>
-
-
-
-  .section {
-    padding: 3rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .mission {
-    background:var(--color-white);
-    /* background: linear-gradient(165deg, rgba(207,134,27,0.8685224089635855) 36%, rgba(6,2,71,0.8836485277704832) 62%); */
-  }
-  .img-container {
-    margin: 1rem 0;
-    max-width:587px;
-  }
-  .photo {
-    width:100%;
-  }
-  .content {
-    margin-top: 1rem;
-  }
-  .title {
-    text-transform: uppercase;
-    display:inline-block;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    font-family: 'Rubik', sans-serif;
-    color:#060247;
-    margin-bottom:2rem;
-    background: 
-      linear-gradient(currentColor 0 0) 
-      0 100% /var(--d, 0) 3px 
-    no-repeat;
-  transition:0.5s;
-  }
-  .title:hover{
---d: 50%;
-  }
-
-  .history .content p{
-    color:black;
-  }
-  .content p {
-    font-family: 'Rubik', sans-serif; 
-    line-height:2.2;
-    color:black;
-    font-family: "Lato", sans-serif;
-  }
-  @media screen and (min-width: 992px) {
-    .section-center {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-      grid-column-gap: 40px;
-    }
-  }
-</style>
