@@ -2,9 +2,11 @@
     import {routeIsActive} from "svelte-router-spa";
     let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
     import * as animateScroll from "svelte-scrollto";
-
+    import { writable } from 'svelte/store'
+    let y;
+    export let x;
 </script>
-
+<svelte:window bind:scrollY={y}/>
 <div class="nav-center">
     <ul id="menu">
         <li><a href="/" class ="nav-logo"> <img src="../ui/img/IEEE-logo.svg" class = "logo" alt="logo" /></a></li>
@@ -14,14 +16,15 @@
         <div class = "dropdown">
             <li><a href= "/programs" class="nav-link" class:active={routeIsActive('/programs')}>Programs</a></li>
             <div class="dropdown-content">
-                {#each list as item}
-                        <a href = "/programs" on:click|preventDefault={() => animateScroll.scrollTo({element:item})}><a href = "/programs" on:click|preventDefault={() => animateScroll.scrollTo({element:item})}>{item.slice(1)}<br></a></a>
-                {/each}
-                <!-- <li><a href= "/programs" on:click|preventDefault={() => (y = 468)}>Technical</a></li>
+                <!-- {#each list as item}
+                
+                        <a href = "/programs" ><button href= "/programs" on:click|preventDefault={() => animateScroll.scrollTo({element:item})}>{item.slice(1)}<br></button></a>
+                {/each} -->
+                <li><a href= "/programs" on:click|preventDefault={() => (y = 468)}>Technical</a></li>
                 <li><a href= "/programs" on:click|preventDefault={() => (y = 790)}>Forge</a></li>
                 <li><a href= "/programs" on:click|preventDefault={() => (y = 1100)}>Events</a></li>
-                <li><a href= "/programs" on:click|preventDefault={() => (y = 1)}>Robotics</a></li>
-                <li><a href= "/programs" on:click|preventDefault={() => (y = 1)}>IEEE</a></li> -->
+                <li><a href= "/programs" on:click|preventDefault={() => (y = 1460)}>Robotics</a></li>
+                <li><a href= "/programs" on:click|preventDefault={() => (y = 1770)}>IEEE</a></li>
                 </div>
         </div>
         <li><a href= "/tutoring" class="nav-link" class:active={routeIsActive('/tutoring')}>Tutoring</a></li>
