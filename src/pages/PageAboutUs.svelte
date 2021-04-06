@@ -4,6 +4,21 @@
   //   let src = "./ui/img/forge-aboutus.jpg";
   let name = "About";
   let img = "../ui/img/IEEE-student-year.png";
+
+  import SliderGalery from "simple-svelte-slideshow";
+ 
+  // These are in the public folder
+  let image1 = "../ui/img/about-us1.JPG";
+  let image2 = "../ui/img/about-us2.jpg";
+  let image3 = "../ui/img/about-us3.JPG";
+  let imgArray = [
+    { src: image1},
+    { src: image2},
+    { src: image3},
+    
+  ];
+  const easingMethod = "backInOut";
+  const duration = 1000;
 </script>
 
 <style>
@@ -88,7 +103,13 @@
     </div>
   </div>
   <br> <br>
+ 
+  <div>
+    <SliderGalery {imgArray} {duration} {easingMethod}/>
+  </div> 
   <div class="demographic">
     <img src={img} alt="demographic" />
   </div>
 </main>
+
+  
