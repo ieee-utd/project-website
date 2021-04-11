@@ -1,94 +1,116 @@
 <script>
-  export let mesg;
-  console.log(mesg);
-  //   let src = "./ui/img/forge-aboutus.jpg";
-  let name = "About";
-  let img = "../ui/img/IEEE-student-year.png";
+  import Banner from "../components/Banner/banner.svelte";
+  import Navbar from "../components/Navbar/navbar.svelte";
+  import NavigationBtn from "../components/navigationBtn.svelte";
+  let list = ["#mission", "#history"];
+  let picDir = "../ui/img/forge-about-us.jpg";
+  let title = "about";
+  let subtitle = "us";
 </script>
 
 <style>
-  main {
-    max-width: auto;
-    margin: 0;
-    align-items: center;
-  }
-  .container {
-    font-family: Roboto;
-    align-items: center;
-  }
-
-  .content {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-
-  .title {
-    float: left;
-    margin: 0 1.5%;
-    width: 30%;
-    color: white;
-    font-size: 2px;
-    padding-top: 212px;
-    font-size: 30px;
-    padding-left: 206px;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 400;
-  }
-
-  .about {
-    background-image: url("../ui/img/forge-aboutus.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    opacity: 0.7;
-  }
-  .demographic{
+  .section {
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
     width: 100%;
+  }
+  .mission {
+    background: var(--color-white);
+  }
+  .img-container {
+    max-width: 587px;
+  }
+  .photo {
+    width: 100%;
+  }
+  .content {
+    margin-top: 1rem;
+  }
+  .title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-family: "Rubik", sans-serif;
+    color: #060247;
+    margin-bottom: 2rem;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
+      no-repeat;
+    transition: 0.5s;
+  }
+  .title:hover {
+    --d: 50%;
+  }
+
+  .history .content p {
+    color: black;
+  }
+  .content p {
+    font-family: "Rubik", sans-serif;
+    line-height: 2.2;
+    color: black;
+    font-family: "Lato", sans-serif;
+  }
+  @media screen and (min-width: 776px) {
+    .section {
+      padding: 3rem 4rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      grid-column-gap: 40px;
+    }
   }
 </style>
 
-<main>
-  <div class="about">
-    <div class="title">
-      <h1>{name}</h1>
+<main id="about">
+  <NavigationBtn {list} />
+  <Banner {picDir} {title} {subtitle} id="top" />
+  <section class="mission section" id="mission">
+    <div class="section-center">
+      <div class="img-container">
+        <img src="../ui/img/statement.jpeg" class="photo" alt="statement" />
+      </div>
+      <div class="content">
+        <h3 class="title">mission statement</h3>
+        <p>
+          We are the student chapter of the Institute of Electrical and
+          Electronics Engineers (IEEE) at the University of Texas at Dallas
+          (UTD). Since its founding, IEEE UTD has remained true to its mission.
+          IEEE UTD members are often involved in other engineering and computer
+          science organizations, such as the American Society of Mechanical
+          Engineers (ASME), UTD Makerspace, the Association for Computing
+          Machinery (ACM), and many more! By leveraging both IEEE and UTD
+          resources, we help students to enforce engineering knowledge they
+          learn and develop connections with other engineers within their fields
+          of interest
+        </p>
+      </div>
     </div>
-  </div>
-
-  <div class="container">
-    <div class="content">
-      <h2>Mission Statement</h2>
-      <p>
-        We are the student chapter of the Institute of Electrical and
-        Electronics Engineers (IEEE) at the University of Texas at Dallas (UTD).
-        Since its founding, IEEE UTD has remained true to its mission. IEEE UTD
-        members are often involved in other engineering and computer science
-        organizations, such as the American Society of Mechanical Engineers
-        (ASME), UTD Makerspace, the Association for Computing Machinery (ACM),
-        and many more! By leveraging both IEEE and UTD resources, we help
-        students to enforce engineering knowledge they learn and develop
-        connections with other engineers within their fields of interest.<br />
-        <br /><br />
-      </p>
-
-      <h2>History</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. <br />
-      </p>
+  </section>
+  <!-- history -->
+  <section class="history section" id="history">
+    <div class="section-center">
+      <div class="content">
+        <h3 class="title">History</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="img-container">
+        <img src="../ui/img/history.jpeg" class="mission-photo" alt="history" />
+      </div>
     </div>
-  </div>
-  <br> <br>
-  <div class="demographic">
-    <img src={img} alt="demographic" />
-  </div>
+  </section>
 </main>

@@ -9,11 +9,11 @@ import PageTutoring from "./pages/PageTutoring.svelte";
 
 export const routes = [
   { name: "/", component: PageIndex },
-  { name: "/programs", component: PagePrograms },
-  { name: "/aboutUs", component: PageAboutUs },
-  { name: "/contact", component: PageContact },
-  { name: "/hkn", component: PageHKN },
-  { name: "/ourTeam", component: PageOurTeam },
-  { name: "/tutoring", component: PageTutoring },
+  { name: "programs", component: PagePrograms },
+  { name: "aboutUs", component: PageAboutUs },
+  { name: "contact", component: PageContact },
+  { name: "hkn", component: PageHKN },
+  { name: "ourTeam", component: PageOurTeam },
+  { name: "tutoring", component: PageTutoring },
   { name: "*", component: PageNotFound }
 ];
