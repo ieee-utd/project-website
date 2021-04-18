@@ -57,6 +57,14 @@
         Below are the requirements Fall 2018 ECS majors with the cumulative GPA (Summer 2018) at the appropriate 1/5th, 1/4th, and 1/3rd point for HKN.
         </p>
         <br>
+        <style>
+          main {
+            ext-align: center;
+		
+		max-width: 1340px;
+		margin: 0 auto;
+          }
+        </style>
         <Grid {grid} />
         <br>
         <p>
