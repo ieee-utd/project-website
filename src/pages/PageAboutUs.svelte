@@ -2,6 +2,7 @@
   import Banner from "../components/Banner/banner.svelte";
   import Navbar from "../components/Navbar/navbar.svelte";
   import NavigationBtn from "../components/navigationBtn.svelte";
+  import Slide from "../pages/slide.svelte";
   let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about";
@@ -52,6 +53,11 @@
     color: black;
     font-family: "Lato", sans-serif;
   }
+  .slideshow{
+    width:90%;
+    height:90%;
+    padding-left:13%;
+  }
   @media screen and (min-width: 776px) {
     .section {
       padding: 3rem 4rem;
@@ -74,7 +80,7 @@
   <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
-        <img src="../ui/img/statement.jpeg" class="photo" alt="statement" />
+        <img src="../ui/img/about-us.JPG" class="photo" alt="statement" />
       </div>
       <div class="content">
         <h3 class="title">mission statement</h3>
@@ -109,8 +115,13 @@
         </p>
       </div>
       <div class="img-container">
-        <img src="../ui/img/history.jpeg" class="mission-photo" alt="history" />
+        <img src="../ui/img/IEEE_Group.jpg" class="mission-photo" alt="history" />
       </div>
     </div>
   </section>
+<section>
+  <div class = "slideshow">
+    <Slide/>
+  </div>
+</section>
 </main>
