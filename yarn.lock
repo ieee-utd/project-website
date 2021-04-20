@@ -615,6 +615,11 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+debounce@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
+
 debug@^4.0.1, debug@^4.1.1:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
@@ -631,6 +636,11 @@ dedent@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
+
+deep-diff@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/deep-diff/-/deep-diff-1.0.2.tgz#afd3d1f749115be965e89c63edc7abb1506b9c26"
+  integrity sha512-aWS3UIVH+NPGCD1kki+DCU9Dua032iSsO43LqQpcs4R3+dVv7tX0qBGjiVHJHjplsoUM2XRO/KB92glqc68awg==
 
 deep-freeze@^0.0.1:
   version "0.0.1"
@@ -651,6 +661,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+detect-browser@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-4.8.0.tgz#1d73bd88c17be866901950ce0aaae1ed060902c6"
+  integrity sha512-f4h2dFgzHUIpjpBLjhnDIteXv8VQiUm8XzAuzQtYUqECX/eKh67ykuiVoyb7Db7a0PUSmJa3OGXStG0CbQFUVw==
 
 detect-indent@^6.0.0:
   version "6.0.0"
@@ -2190,6 +2205,15 @@ svelte-check@^1.0.0:
     vscode-languageserver-protocol "3.15.3"
     vscode-languageserver-types "3.15.1"
     vscode-uri "2.1.2"
+
+svelte-data-grid@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/svelte-data-grid/-/svelte-data-grid-3.0.0.tgz#be89ab8a01cc5871ac0c68433092d679c3935bd5"
+  integrity sha512-vciX9xV49PLdGlJjiLO6WW5IpxeK8P1itP4HLetQeK9bfP5gqC3Jr8R94OGZ7rVPEzjRkQzuiBMGyPh0uIhLfw==
+  dependencies:
+    debounce "^1.2.0"
+    deep-diff "^1.0.2"
+    detect-browser "^4.8.0"
 
 svelte-language-server@*:
   version "0.10.125"
