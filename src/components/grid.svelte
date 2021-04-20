@@ -2,7 +2,7 @@
   export let grid = [4, 4];
 
   $: col = `repeat(${grid[1]}, 1fr)`;
-  $: row = `50px , repeat(${grid[0] - 1}, 1fr)`;
+  $: row = `56px , repeat(${grid[0] - 1}, 1fr)`;
 
   let list = ["ECS Major", "SO @ 1/5th", "JR @ 1/4th", "SR @ 1/3rd"];
 
@@ -41,27 +41,32 @@
 </script>
 
 <style>
-  .container {
-    display: grid;
-    border: 0.01px solid #999;
-    border-radius: 2px;
-    width: 100%;
-    grid-row-gap: 1px;
-    background: #fff;
-				margin: 1rem 0;
-				
-				
-  }
-		.grid{
-			height:33.5px;
-			display: grid;
-			align-content: center;
-			border-bottom: 0.05px solid rgb(230, 228, 228);
-			padding-left:25px;
-		}
-		.grid-header{
-				height:50px !important;
-		}
+.container {
+  display: grid;
+  border: 0.01px solid #999;
+  border-radius: 2px;
+  width: 100%;
+  grid-row-gap: 1px;
+  margin: 0.75rem 0;	
+  
+  
+  background: #fff;
+}
+.grid{
+  height:33.5px;
+  display: grid;
+  align-content: center;
+  border-bottom: 0.05px solid rgb(230, 228, 228);	
+  padding-left: 15px;
+  
+}
+/*  */
+.grid-header{
+    height:56px !important;
+}
+.grid-header:nth-child(1){
+  padding-left:15px;
+}
 
   /* CUSTOM TAG for div title */
   divTitle {
