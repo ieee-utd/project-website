@@ -1,8 +1,8 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
-  let picDir = "../ui/img/forge-program.jpg";
+  import Grid from "../components/grid.svelte";
   let title = "Eta Kappa Nu Honor Society";
-  import Grid from "./Grid.svelte";
+  let picDir = "../ui/img/forge-program.jpg";
   let grid = [6, 4];
 </script>
 
