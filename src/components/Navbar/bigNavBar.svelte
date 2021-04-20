@@ -1,6 +1,19 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
+  let list = ["#Technical","#The Forge","#Events","#Robotics","#IEEE"]
+    import * as animateScroll from "svelte-scrollto";
+    function reset() {
+		count.set(x);
+	}
+    let y;
+    let z;
+    function handleClick(z) 
+    {
+		location.href = "/programs" + z;
+	}
+  
 </script>
+<svelte:window bind:scrollY={y}/>
 
 <style>
   .active {
@@ -27,6 +40,23 @@
   .nav-link:hover {
     color: var(--color-white);
   }
+  .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 115px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        opacity: 0.5;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {color: white;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
 </style>
 
 <div class="nav-center">
@@ -50,12 +80,17 @@
         class="nav-link"
         class:active={routeIsActive('/ourTeam')}>Our Team</a>
     </li>
-    <li>
-      <a
-        href="/programs"
-        class="nav-link"
-        class:active={routeIsActive('/programs')}>Programs</a>
-    </li>
+    <div class = "dropdown">
+      <li><a href= "/programs" class="nav-link" class:active={routeIsActive('/programs')}>Programs</a></li>
+      <div class="dropdown-content">
+          {#each list as item}
+          <div>
+              <button on:click={() => handleClick(item)}  > <strong>{item.slice(1)}</strong><br> </button> 
+          </div>
+
+          {/each}
+          </div>
+  </div>
     <li>
       <a
         href="/tutoring"

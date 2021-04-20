@@ -1,8 +1,7 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
-  import Navbar from "../components/Navbar/navbar.svelte";
   import NavigationBtn from "../components/navigationBtn.svelte";
-  import Slide from "../pages/slide.svelte";
+  import Slide from "../components/slide.svelte";
   let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about";

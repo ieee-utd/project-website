@@ -1,5 +1,5 @@
 <script>
-	import { hslide } from './hslide.js';
+	import { hslide } from '../util/hslide.js';
     let image1 = "../ui/img/about-us7.JPG";
     let image2 = "../ui/img/about-us6.JPG";
     let image3 = "../ui/img/about-us2.JPG";
@@ -79,14 +79,6 @@
 </div>
 
 <style>
-	
-	:global(html) {
-		font-size: 62.5%;
-	}
-	
-	:global(body) {
-		font-size: 1.4rem;
-	}
 	button {
 		background: transparent;
 		color: #FFF;
@@ -153,11 +145,9 @@
 		width: 100%;
 		height: 100%;
 		background-image: url('../ui/img/about-us1.JPG');  
-        /* background-attachment:fixed ; */
         background-position:center ;
         background-size:cover ;
         background-repeat: no-repeat ;
-        /* background-position: center; */
 	    align-items: center;
 		justify-content: center;
 		display: flex;
