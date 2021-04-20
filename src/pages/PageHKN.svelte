@@ -57,7 +57,7 @@
       Below are the requirements Fall 2018 ECS majors with the cumulative GPA
       (Summer 2018) at the appropriate 1/5th, 1/4th, and 1/3rd point for HKN.
     </p>
-    <Grid />
+    <Grid {grid} />
     <p>
       In addition, applicants will need to have completed 15 hours of volunteer
       service in STEM-related fields. Fill out this <a
