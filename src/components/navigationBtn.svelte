@@ -29,7 +29,7 @@ export let list = [];
     display:inline-block;
   }
   .dropbtn {
-  background-color: var(--color-primary-blue);
+  background-color: #222;
    width: 50px;
   height: 50px;
   line-height: 50px;
@@ -70,7 +70,7 @@ export let list = [];
  height:2.5rem;
  display:inherit;
  border-radius: 50%;
- color:var(--color-primary);
+ color:#fff;
  transition: all 0.5s ease-in-out; 
 }
 .dropdown:hover .dropdown-content {

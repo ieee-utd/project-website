@@ -18,7 +18,7 @@ svg{
  height:2.5rem;
  display:inherit;
  border-radius: 50%;
- color:var(--color-primary);
+ color:#fff;
  transition: all 0.5s ease-in-out; 
 }
 svg:hover{
