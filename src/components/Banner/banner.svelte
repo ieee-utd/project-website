@@ -58,7 +58,7 @@
     .banner {
       height: 30vh;
     }
-    .title {
+    .banner-title {
       font-size: 2rem;
     }
   }

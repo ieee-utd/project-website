@@ -37,18 +37,28 @@
     text-align: center;
     padding-bottom: 2rem;
   }
-
-  .copyright {
-    margin-top: 1rem;
+.icon{
+ width: 5rem;
+ height:2.5rem;
+ display:inherit;
+ border-radius: 50%;
+ color:#222;
+ transition: all 0.5s ease-in-out; 
+}
+.icon:hover{
+ transform: translateY(-10px);
+}
+.copyright {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 776px) {
+  .logo {
+    display: inline-block;
   }
-  @media screen and (min-width: 776px) {
-    .logo {
-      display: inline-block;
-    }
-    .sponsor-logo-container {
-      text-align: center;
-    }
+  .sponsor-logo-container {
+    text-align: center;
   }
+}
 </style>
 
 <footer class="footer">
@@ -60,21 +70,13 @@
     </div>
   </div>
   <div class="socials-container">
-    <a href="https://www.facebook.com/" target="_blank"><MdiIcon
-        icon={mdiFacebook}
-        class="icon" /></a>
-    <a href="https://discord.com/" target="_blank"><MdiIcon
-        icon={mdiDiscord}
-        class="icon" /></a>
-    <a href="https://twitter.com/" target="_blank"><MdiIcon
-        icon={mdiTwitter}
-        class="icon" /></a>
-    <a href="https://www.instagram.com/" target="_blank"><MdiIcon
-        icon={mdiInstagram}
-        class="icon" /></a>
-    <a href="https://www.linkedin.com/" target="_blank"><MdiIcon
-        icon={mdiLinkedin}
-        class="icon" /></a>
+    <a href="https://www.facebook.com/" target="_blank">
+    <i class="fab fa-facebook icon"></i>
+    </a>
+    <a href="https://discord.com/" target="_blank"><i class="fab fa-discord icon"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
     <p class="copyright">&copy; 2021 IEEE UTD. All rights reserved</p>
   </div>
 </footer>
