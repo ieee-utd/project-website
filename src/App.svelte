@@ -80,7 +80,7 @@
     letter-spacing: 0.2rem;
     font-family: "Rubik", sans-serif;
     color: #060247;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
       no-repeat;
     transition: 0.5s;

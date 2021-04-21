@@ -1,5 +1,6 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
+import { slide } from "svelte/transition";
   let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
     let y;
     function handleClick(z) 
@@ -42,7 +43,6 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: gray;
         min-width: 115px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -80,7 +80,7 @@
       <div class="dropdown-content">
           {#each list as item}
           <div>
-              <button on:click={() => handleClick(item)}  > <strong class = "dropdown-links">{item.slice(1)}</strong><br> </button> 
+              <button on:click={() => handleClick(item)}  > <a href= {item.slice(1)} class = "dropdown-link">{item.slice(1)}</a><br> </button> 
           </div>
 
           {/each}

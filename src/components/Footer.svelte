@@ -1,5 +1,7 @@
 <script>
   import { fly } from "svelte/transition";
+  let year;
+  year = new Date().getFullYear();
 </script>
 
 <style>
@@ -68,6 +70,6 @@
     <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
     <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-    <p class="copyright">&copy; 2021 IEEE UTD. All rights reserved</p>
+    <p class="copyright">&copy; {year} IEEE UTD. All rights reserved</p>
   </div>
 </footer>

@@ -1,15 +1,15 @@
 <script>
 import * as animateScroll from "svelte-scrollto";
-import { mdiArrowUpBold } from '@mdi/js';
-import MdiIcon from "./MdiIcon.svelte"
-export let list = [];
+
  let y;
 </script>
 <svelte:window bind:scrollY={y}/>
 
 <div class="dropdown" class:show-menu={y>250}>
-  <button class="dropbtn"><i class="fas fa-arrow-up icon"></i></button>
-    <a on:click={() => animateScroll.scrollToTop()}></a>
+  <button class="dropbtn">
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <a on:click={() => animateScroll.scrollToTop()}><i class="fas fa-arrow-up icon"></i></a>
+  </button>
 </div> 
 
 <style>
@@ -29,49 +29,18 @@ export let list = [];
   line-height: 50px;
   border:none;
   font-size: 18px;
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
   border-radius:50%;
   cursor: pointer;
   text-decoration: none;
   transition:var(--transition);
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  border-radius: var(--radius);
-  bottom:2rem;
-  right:2rem;
-  background:var(--color-primary);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color:var(--color-white);
-  font-weight:400;
-  padding:1rem;
-  text-decoration: none;
-  display: block;
-  transition:var(--transition);
-}
-.dropdown-content a:hover {
-  transform:translateX(5px);
-  background:var(--color-orange-complement);
-  }
 .icon{
- display:inline-block;
- font-size:2rem;
- padding-left:0.4rem;
- color:#fff;
- transform: translate(-50%,0);
- transition: var(--transition);
+ width: 2.5rem;
+ height:2.5rem;
+ color:var(--color-white);
+ transition: all 0.5s ease-in-out; 
 }
-.dropdown:hover .dropdown-content {
-  display: block;
-  }
-.dropdown:hover .dropbtn {background-color: var(--color-primary);}
-.dropdown:hover .icon{
-  transform:rotate(-50deg);
-}
+
 </style>

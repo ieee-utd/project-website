@@ -2,7 +2,6 @@
   import Banner from "../components/Banner/banner.svelte";
   import NavigationBtn from "../components/navigationBtn.svelte";
   import Slide from "../components/slide.svelte";
-  let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about us";
 </script>
@@ -44,7 +43,7 @@
 </style>
 
 <main id="about">
-  <NavigationBtn {list} />
+  <NavigationBtn />
   <Banner {picDir} {title}  id="top" />
 <div class="wrapper-color-white">
   <section class="mission section" id="mission">
@@ -93,7 +92,7 @@
   </section>
   <section  class="slideshow section">
     <div class = "slideshow-container">
-      <h1 class="slideshow-title title">Gallery</h1>
+      <h1 class="title">Gallery</h1>
         <Slide/>
     </div>
   </section>

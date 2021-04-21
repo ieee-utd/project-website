@@ -145,10 +145,10 @@
 		width: 100%;
 		height: 100%;
 		background-image: url('../ui/img/about-us1.JPG');  
-        background-position:center ;
-        background-size:cover ;
-        background-repeat: no-repeat ;
-	    align-items: center;
+		background-position:center ;
+		background-size:cover ;
+		background-repeat: no-repeat ;
+		align-items: center;
 		justify-content: center;
 		display: flex;
 		text-align: center;
