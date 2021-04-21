@@ -14,16 +14,13 @@
   footer {
     width: 100%;
     min-height: 50vh;
-    background: white;
+    background: #fff;
   }
   .sponsor-logo-container {
     padding: 1rem;
   }
-  .title {
-    color: #222;
-    font-size: 1.2rem;
-    /* text-transform: capitalize; */
-    font-weight: 700;
+  .footer-title {
+    color: var(--color-paper-grey);
     text-align: center;
   }
   .logo {
@@ -56,7 +53,7 @@
 
 <footer class="footer">
   <div class="sponsor-logo-container">
-    <p class="title center">Thank you to the IEEE UTD sponsors</p>
+    <h4 class="footer-title center">Thank you to the IEEE UTD sponsors</h4>
     <div class="container-wrapper">
       <img src="../ui/img/texas-instrument.jpg" alt="" class="logo" />
       <img src="../ui/img/murata.png" alt="" class="logo" />

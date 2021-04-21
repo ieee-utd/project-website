@@ -4,19 +4,14 @@
   import Slide from "../components/slide.svelte";
   let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
-  let title = "about";
-  let subtitle = "us";
+  let title = "about us";
 </script>
 
 <style>
-  .section {
-    padding: 3rem 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .mission {
+
+  /* .mission {
     background: var(--color-white);
-  }
+  } */
   .img-container {
     max-width: 587px;
   }
@@ -26,36 +21,15 @@
   .content {
     margin-top: 1rem;
   }
-  .title {
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    font-family: "Rubik", sans-serif;
-    color: #060247;
-    margin-bottom: 2rem;
-    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
-      no-repeat;
-    transition: 0.5s;
-  }
-  .title:hover {
-    --d: 50%;
-  }
 
+  .slideshow-container{
+    text-align: center;
+  }
   .history .content p {
     color: black;
   }
-  .content p {
-    font-family: "Rubik", sans-serif;
-    line-height: 2.2;
-    color: black;
-    font-family: "Lato", sans-serif;
-  }
   @media screen and (min-width: 776px) {
-    .section {
-      padding: 3rem 4rem;
-    }
+
   }
   @media screen and (min-width: 992px) {
     .section-center {
@@ -66,17 +40,13 @@
       grid-column-gap: 40px;
     }
 
-    .slideshow{
-    width:90%;
-    height:90%;
-    padding-left:13%;
-  }
   }
 </style>
 
 <main id="about">
   <NavigationBtn {list} />
-  <Banner {picDir} {title} {subtitle} id="top" />
+  <Banner {picDir} {title}  id="top" />
+<div class="wrapper-color-white">
   <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
@@ -98,8 +68,9 @@
           of interest
         </p>
       </div>
-    </div>
+    </div>  
   </section>
+  </div>
   <!-- history -->
   <section class="history section" id="history">
     <div class="section-center">
@@ -120,8 +91,9 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class = "slideshow">
+  <section  class="slideshow section">
+    <div class = "slideshow-container">
+      <h1 class="slideshow-title title">Gallery</h1>
         <Slide/>
     </div>
   </section>

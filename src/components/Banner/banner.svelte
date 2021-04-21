@@ -4,23 +4,17 @@
   import { fly } from "svelte/transition";
   export let picDir = "";
   export let title = "";
-  export let subtitle = "";
 </script>
 
 <style>
-  .title {
+  .banner-title {
     color: var(--color-white);
     letter-spacing: 5px;
-    font-size: 3rem;
     font-weight: 700;
-    font-family: var(--font-head);
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: 15px;
     text-transform: uppercase;
-  }
-  .subtitle {
-    color: var(--color-white);
   }
   .banner-photo {
     width: 100%;
@@ -32,9 +26,9 @@
     z-index: 3;
     position: absolute;
     top: 0;
-    padding: 2rem;
     height: 100%;
     width: 100%;
+    padding-left:2rem;
   }
   .img-container {
     height: 100%;
@@ -56,8 +50,8 @@
   }
   .banner {
     width: 100%;
-    height: 50vh;
-    position: relative;
+    height: 320px;
+    position: relative; 
     background: transparent;
   }
   @media screen and (max-width: 776px) {
@@ -69,9 +63,6 @@
     }
   }
   @media screen and (min-width: 776px) {
-    .banner-wrapper {
-      padding: 2rem 4rem;
-    }
   }
 </style>
 
@@ -79,8 +70,8 @@
   <div class="img-container">
     <img src={picDir} alt="" class="banner-photo" />
   </div>
-  <div class="banner-wrapper section">
+  <div class="banner-wrapper">
     <Navbar />
-    <h1 class="title">{title} <span class="subtitle">{subtitle}</span></h1>
+    <h2 class="banner-title">{title}</h2>
   </div>
 </header>

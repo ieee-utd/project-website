@@ -1,12 +1,7 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
-  let list = ["#Technical","#The Forge","#Events","#Robotics","#IEEE"]
-    import * as animateScroll from "svelte-scrollto";
-    function reset() {
-		count.set(x);
-	}
+  let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
     let y;
-    let z;
     function handleClick(z) 
     {
 		location.href = "/programs" + z;
@@ -85,7 +80,7 @@
       <div class="dropdown-content">
           {#each list as item}
           <div>
-              <button on:click={() => handleClick(item)}  > <strong>{item.slice(1)}</strong><br> </button> 
+              <button on:click={() => handleClick(item)}  > <strong class = "dropdown-links">{item.slice(1)}</strong><br> </button> 
           </div>
 
           {/each}
