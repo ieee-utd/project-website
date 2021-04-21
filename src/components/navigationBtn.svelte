@@ -24,7 +24,7 @@ import * as animateScroll from "svelte-scrollto";
   }
   .dropbtn {
   background-color: #222;
-   width: 50px;
+  width: 50px;
   height: 50px;
   line-height: 50px;
   border:none;

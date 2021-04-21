@@ -2,6 +2,7 @@
   import { Router } from "svelte-router-spa";
   import { routes } from "./routes";
   import Footer from "./components/Footer.svelte";
+  import NavigationBtn from "./components/navigationBtn.svelte"
 </script>
 
 <style>
@@ -37,9 +38,9 @@
     margin:0;
   }
   :global(.section){
-   max-width:1400px;
-   margin:0 auto;
-   padding: 3rem 2rem;
+  max-width:1400px;
+  margin:0 auto;
+  padding: 3rem 2rem;
   }
   :global(h1,h2,h3,h4,h5){
     font-family: var(--font-head);
@@ -93,5 +94,6 @@
 
 <div>
   <Router {routes} />
+  <NavigationBtn />
   <Footer />
 </div>

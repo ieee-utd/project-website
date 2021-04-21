@@ -1,6 +1,5 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
-  import NavigationBtn from "../components/navigationBtn.svelte";
   import Slide from "../components/slide.svelte";
   let picDir = "../ui/img/forge-about-us.jpg";
   let title = "about us";
@@ -8,9 +7,6 @@
 
 <style>
 
-  /* .mission {
-    background: var(--color-white);
-  } */
   .img-container {
     max-width: 587px;
   }
@@ -20,12 +16,8 @@
   .content {
     margin-top: 1rem;
   }
-
   .slideshow-container{
     text-align: center;
-  }
-  .history .content p {
-    color: black;
   }
   @media screen and (min-width: 776px) {
 
@@ -43,14 +35,12 @@
 </style>
 
 <main id="about">
-  <NavigationBtn />
   <Banner {picDir} {title}  id="top" />
 <div class="wrapper-color-white">
   <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
         <img src="../ui/img/about-us.JPG" class="photo" alt="statement" />
-
       </div>
       <div class="content">
         <h3 class="title">mission statement</h3>
@@ -90,6 +80,7 @@
       </div>
     </div>
   </section>
+  <!-- slide show -->
   <section  class="slideshow section">
     <div class = "slideshow-container">
       <h1 class="title">Gallery</h1>

@@ -34,11 +34,7 @@
     margin-bottom: 1.3rem;
     max-width: 70vw;
   }
-  @media screen and (min-width: 776px) {
-    .section {
-      padding: 2rem 4rem;
-    }
-  }
+ 
   .frame-container {
     width: 100%;
     height: 100%;
@@ -48,6 +44,11 @@
     width: 100%;
     height: 100vh;
   }
+@media screen and (min-width: 776px) {
+.section {
+  padding: 2rem 4rem;
+}
+}
 </style>
 
 <Banner {title} {picDir} />
@@ -84,6 +85,7 @@
       </p>
     </div>
     <div class="container-center">
+      <!-- svelte-ignore a11y-missing-attribute -->
       <iframe
         class="frame-container"
         src="https://outlook.office365.com/calendar/published/16c7ed4463b14cb88df73535b02c7e4f@UTDallas.edu/0e865a87e7bb471ba2877a3e0ea8f69717838207453034454286/calendar.html" />

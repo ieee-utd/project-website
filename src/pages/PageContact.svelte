@@ -1,6 +1,5 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
-  import NavigationButton from "../components/navigationBtn.svelte";
   import {
     mdiFacebook,
     mdiDiscord,
@@ -28,11 +27,8 @@
     text-align: center;
   }
   .title {
-    font-weight: 700;
-    font-size: 1.8rem;
-    padding: 2rem 0;
-    color: black;
-    text-transform: capitalize;
+    padding-top: 1rem;
+    padding-bottom:0.5rem;
   }
   .contact-form {
     color: grey;
@@ -98,6 +94,18 @@
     color: black;
     border-radius: 0.3rem;
   }
+  .icon {
+    width: 2rem;
+    height:2.5rem;
+    display:inline-block;
+    font-size:2rem;
+    padding-left:0.4rem;
+    color:#222;
+    transition: var(--transition);
+  }
+  .icon:hover{
+ transform: translateY(-10px);
+}
   /* section styling */
   @media screen and (min-width: 776px) {
     .section {
@@ -169,21 +177,11 @@
         <h4 class="title">Social Media</h4>
       </div>
       <div class="socials-container">
-        <a href="https://www.facebook.com/" target="_blank"><MdiIcon
-            icon={mdiFacebook}
-            class="icon" /></a>
-        <a href="https://discord.com/" target="_blank"><MdiIcon
-            icon={mdiDiscord}
-            class="icon" /></a>
-        <a href="https://twitter.com/" target="_blank"><MdiIcon
-            icon={mdiTwitter}
-            class="icon" /></a>
-        <a href="https://www.instagram.com/" target="_blank"><MdiIcon
-            icon={mdiInstagram}
-            class="icon" /></a>
-        <a href="https://www.linkedin.com/" target="_blank"><MdiIcon
-            icon={mdiLinkedin}
-            class="icon" /></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook icon"></i></a>
+        <a href="https://discord.com/" target="_blank"><i class="fab fa-discord icon"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
       </div>
     </article>
   </div>

@@ -1,7 +1,5 @@
 <script>
   import Navbar from "../Navbar/navbar.svelte";
-  import { quintOut } from "svelte/easing";
-  import { fly } from "svelte/transition";
   export let picDir = "";
   export let title = "";
 </script>
@@ -60,6 +58,9 @@
     }
     .banner-title {
       font-size: 2rem;
+    }
+    .banner-wrapper{
+      padding-top:1rem;
     }
   }
   @media screen and (min-width: 776px) {
