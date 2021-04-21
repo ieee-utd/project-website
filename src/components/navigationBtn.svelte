@@ -8,14 +8,8 @@ export let list = [];
 <svelte:window bind:scrollY={y}/>
 
 <div class="dropdown" class:show-menu={y>250}>
-  <button class="dropbtn"><MdiIcon icon={mdiArrowUpBold} class = "icon"></MdiIcon></button>
-    <div class="dropdown-content">
-    <a  on:click={() => animateScroll.scrollToBottom()}> Bottom </a> 
-    {#each list as item}
-      <a on:click={() => animateScroll.scrollTo({element:item})}> Scroll to {item.slice(1)} </a> 
-    {/each}
-    <a on:click={() => animateScroll.scrollToTop()}> Top </a>
-  </div>
+  <button class="dropbtn"><i class="fas fa-arrow-up icon"></i></button>
+    <a on:click={() => animateScroll.scrollToTop()}></a>
 </div> 
 
 <style>
@@ -66,12 +60,12 @@ export let list = [];
   background:var(--color-orange-complement);
   }
 .icon{
- width: 2.5rem;
- height:2.5rem;
- display:inherit;
- border-radius: 50%;
+ display:inline-block;
+ font-size:2rem;
+ padding-left:0.4rem;
  color:#fff;
- transition: all 0.5s ease-in-out; 
+ transform: translate(-50%,0);
+ transition: var(--transition);
 }
 .dropdown:hover .dropdown-content {
   display: block;

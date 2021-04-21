@@ -1,13 +1,5 @@
 <script>
   import { fly } from "svelte/transition";
-  import {
-    mdiFacebook,
-    mdiDiscord,
-    mdiTwitter,
-    mdiInstagram,
-    mdiLinkedin,
-  } from "@mdi/js";
-  import MdiIcon from "./MdiIcon.svelte";
 </script>
 
 <style>
@@ -38,12 +30,13 @@
     padding-bottom: 2rem;
   }
 .icon{
- width: 5rem;
+ width: 2rem;
  height:2.5rem;
- display:inherit;
- border-radius: 50%;
+ display:inline-block;
+ font-size:2rem;
+ padding-left:0.4rem;
  color:#222;
- transition: all 0.5s ease-in-out; 
+ transition: var(--transition);
 }
 .icon:hover{
  transform: translateY(-10px);
@@ -70,9 +63,7 @@
     </div>
   </div>
   <div class="socials-container">
-    <a href="https://www.facebook.com/" target="_blank">
-    <i class="fab fa-facebook icon"></i>
-    </a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook icon"></i></a>
     <a href="https://discord.com/" target="_blank"><i class="fab fa-discord icon"></i></a>
     <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
