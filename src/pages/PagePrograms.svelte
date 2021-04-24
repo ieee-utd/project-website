@@ -76,12 +76,10 @@
 <section in:fade="{{ y: 200, duration: 750 }}" class="robotics section" id = "Robotics">
   <div class="container">
   <h2 class = "title">Robotics</h2>
-  <div class="section-center">
   <p>
     The IEEE UTD Robotics Team participates in the IEEE Region 5 Student Robotics Competition, which happens once a year in April. While the competition team is limited to 10, the robotics team opens meetings to all members interested in robotics and teamwork. You can view the next competition details here: 
     <a href="https://r5conferences.org/robotics/" target="_blank" class = "robotic-link">https://r5conferences.org/robotics/</a>. If you would like to get involved in IEEE UTD robotics, make sure to attend the next Technical Committee Meeting or the next Robotics Meeting, or DM us on Discord for ways to get involved.
-  </p>
-    
+  </p>  
 </div>
 </section>
 
@@ -93,6 +91,4 @@
     Women In Engineering (WIE UTD) is an initiative to increase the representation of women and underrepresented people in IEEE. We work to create a community where CE and EE majors can connect, support each other, and be supported by IEEE. We collaborate with other organizations to bring you events for your personal, professional, and academic growth. These events include biweekly study sessions, professional Q&A panels, volunteer opportunities, social events, and much much more! Everyone is welcome at our events!
   </p>
 </section>
-
-
 </main>
