@@ -84,7 +84,7 @@ import { quadInOut, quintInOut } from "svelte/easing";
           {#each list as item}
           <div>
               <!-- svelte-ignore a11y-missing-attribute -->
-              <button on:click={() => handleClick(item.replace(/\s+/g, ''))}  > <a class = "nav-link">{item.slice(1)}</a></button> 
+              <button on:click={() => handleClick(item.replace(/\s+/g, ''))}> <strong class = "nav-link">{item.slice(1)}</strong></button> 
           </div>
 
           {/each}
