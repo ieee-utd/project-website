@@ -81,11 +81,12 @@ $: document.body.style.overflow = showNav? "hidden":"scroll";
   .sidebar-icon{
     display: inline-block;
     width:24px;
+    font-size:1.5rem;
   }
   .test{
     display:inline-block;
-    margin-left:1.2rem;
-    font-size:1.3rem;
+    margin-left:1.5rem;
+    font-size:1.2rem;
     text-transform: capitalize;
     font-weight: bold;
   }
@@ -130,7 +131,7 @@ $: document.body.style.overflow = showNav? "hidden":"scroll";
       <a
       href="/aboutus"
       class="nav-link"
-      class:active={routeIsActive('/aboutus')}> <i class="fas fa-book sidebar-icon"></i> <p class ="test">about us</p> </a>
+      class:active={routeIsActive('/aboutus')}> <i class="fas fa-book-open sidebar-icon"></i> <p class ="test">about us</p> </a>
     </li>
     <li>
       <a
@@ -148,7 +149,7 @@ $: document.body.style.overflow = showNav? "hidden":"scroll";
       <a
       href="/hkn"
       class="nav-link"
-      class:active={routeIsActive('/hkn')}> <i class="far fa-star sidebar-icon"></i> <p class ="test">HKN</p></a>
+      class:active={routeIsActive('/hkn')}> <i class="fas fa-award sidebar-icon"></i> <p class ="test">HKN</p></a>
     </li>
     <li>
       <a
