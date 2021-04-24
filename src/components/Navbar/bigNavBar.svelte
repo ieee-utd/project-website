@@ -81,7 +81,7 @@ import { quadInOut, quintInOut } from "svelte/easing";
       <div class="dropdown-content">
           {#each list as item}
           <div>
-              <button on:click={() => handleClick(item)}  > <a href= {item.slice(1)} class = "nav-link">{item.slice(1)}</a><br> </button> 
+              <button on:click={() => handleClick(item)}  > <strong class = "nav-link">{item.slice(1)}</strong><br> </button> 
           </div>
 
           {/each}
