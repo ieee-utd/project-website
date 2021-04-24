@@ -16,6 +16,7 @@
   .footer-title {
     color: var(--color-paper-grey);
     text-align: center;
+    padding-top:1.7rem;
   }
   .logo {
     display: block;
