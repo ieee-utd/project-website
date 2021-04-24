@@ -7,11 +7,8 @@ import {fade} from "svelte/transition"
 </script>
 <svelte:window bind:scrollY={y}/>
 
-<div class="dropdown" class:show-menu={y>250} 
-      
-  >
-  <button class="dropbtn"
-  >
+<div class="dropdown" class:show-menu={y>250}>
+  <button class="dropbtn">
     <!-- svelte-ignore a11y-missing-attribute -->
     <a on:click={() => animateScroll.scrollToTop()}><i class="fas fa-arrow-up icon"></i></a>
   </button>
@@ -23,8 +20,21 @@ import {fade} from "svelte/transition"
     position:fixed;
     bottom:2rem;
     right:1rem;
-   
+    transition: var(--transition);
+    animation: dropdown 0.2s 1;
   }
+  @keyframes dropdown{
+    0%{
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(0.5);
+    }
+    100%{
+      transform:scale(1);
+    }
+  }
+
   .show-menu{
     display:inline-block;
   }

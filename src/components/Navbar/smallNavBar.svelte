@@ -7,6 +7,7 @@ import { fly, } from "svelte/transition"
     document.body.style.overflow = "hidden";
   }
   let showNav = false;
+$: document.body.style.overflow = showNav? "hidden":"scroll";
 </script> 
 <style>
   span {
@@ -38,6 +39,15 @@ import { fly, } from "svelte/transition"
     height:100vh;
     padding: 10px;
     display:none;
+    animation: sidebar 1s 1;
+  }
+  @keyframes sidebar {
+    0%{
+      transform:  translateX(-300px);
+    }
+    100%{
+      transform:translateX(0);
+    }
   }
   .show{
     display: block;
@@ -93,12 +103,10 @@ import { fly, } from "svelte/transition"
   </button>
   <!-- sidebar container -->
   <div class="magical" class:show={showNav} on:click="{()=>{
-    document.body.style.overflow = "scroll";
     showNav = false;
   }}"></div>
   <div class="sidebar-container" class:show={showNav} 
-  in:fly={{x:-1000, duration:2700,  easing:quintOut}}  
-  out:fly={{x:-1000, duration:100}}  
+  
   >
     <div class="sidebar" >
       <!-- header -->
