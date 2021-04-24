@@ -84,7 +84,7 @@
 </section>
 
 
-<section in:fade="{{ y: 200, duration: 750 }}" class="ieee wie section" id = "IEEE">
+<section in:fade="{{ y: 200, duration: 750 }}" class="ieee wie section" id = "IEEEWIE">
   <div class="container">
   <h2 class = "title">IEEE WIE </h2>
   <p>
