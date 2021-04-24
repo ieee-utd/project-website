@@ -31,6 +31,7 @@
     "svelte-router-spa": "^5.8.3"
   },
   "devDependencies": {
+    "@beyonk/svelte-carousel": "^2.8.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^6.0.0",
@@ -46,6 +47,7 @@
     "surge": "^0.21.7",
     "svelte": "^3.0.0",
     "svelte-check": "^1.0.0",
+    "svelte-feather-icons": "^3.3.0",
     "svelte-preprocess": "^4.0.0",
     "svelte-scrollto": "^0.2.0",
     "tslib": "^2.0.0",

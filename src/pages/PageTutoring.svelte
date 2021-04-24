@@ -37,12 +37,10 @@
  
   .frame-container {
     width: 100%;
-    height: 100%;
+    height: 800px;
   }
   .container-center {
-    margin: 0 auto;
     width: 100%;
-    height: 100vh;
   }
 @media screen and (min-width: 776px) {
 .section {
@@ -88,6 +86,7 @@
       <!-- svelte-ignore a11y-missing-attribute -->
       <iframe
         class="frame-container"
+        loading ="eager"
         src="https://outlook.office365.com/calendar/published/16c7ed4463b14cb88df73535b02c7e4f@UTDallas.edu/0e865a87e7bb471ba2877a3e0ea8f69717838207453034454286/calendar.html" />
     </div>
   </section>

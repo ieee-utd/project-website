@@ -1,7 +1,9 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
+  import Carousel from "../components/Carousel.svelte";
   import Slide from "../components/slide.svelte";
   let picDir = "../ui/img/forge-about-us.jpg";
+  let images = ['../ui/img/about-us7.JPG', '../ui/img/about-us2.JPG', '../ui/img/about-us6.JPG','../ui/img/about-us3.JPG', '../ui/img/about-us4.jpg']
   let title = "about us";
 </script>
 
@@ -15,9 +17,6 @@
   }
   .content {
     margin-top: 1rem;
-  }
-  .slideshow-container{
-    text-align: center;
   }
   @media screen and (min-width: 776px) {
 
@@ -81,10 +80,7 @@
     </div>
   </section>
   <!-- slide show -->
-  <section  class="slideshow section">
-    <div class = "slideshow-container">
-      <h1 class="title">Gallery</h1>
-        <Slide/>
-    </div>
-  </section>
+  <section class ="slideShow section" style="max-width:900px">
+  <Carousel {images}/>
+</section>
 </main>
