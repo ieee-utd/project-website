@@ -16,6 +16,7 @@
     --color-secondary: #424242;
     --color-secondary-active: #616161;
     --color-paper-grey: #757575;
+    --color-paper-grey-400: #b1b1b1;
     --color-accent: #f2be32;
     --color-paper: #eeeeee;
     --color-white: #fff;
@@ -31,7 +32,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--color-paper);
+  }
+  :global(body){
+     background: var(--color-paper);
   }
   :global(main){
     padding:0;

@@ -1,6 +1,8 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
+  import {scale} from "svelte/transition"
 import { quadInOut, quintInOut } from "svelte/easing";
+  document.body.style.overflow = "scroll"
   let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
     let y;
   function handleClick(z) 
