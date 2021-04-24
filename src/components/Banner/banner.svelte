@@ -69,7 +69,7 @@
   }
 </style>
 
-<header class="banner" in:fade="{{delay: 100, duration: 700 , easing: quartInOut}}">
+<header class="banner" in:fade="{{delay: 100, duration: 800 , easing: quartInOut}}">
   <div class="img-container" >
     <img src={picDir} alt="" class="banner-photo" />
   </div>
