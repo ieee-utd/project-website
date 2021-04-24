@@ -1,7 +1,5 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
-import { quintInOut, quintOut } from "svelte/easing";
-import { fly, } from "svelte/transition"
   function handleToggle() {
     showNav = true;
     document.body.style.overflow = "hidden";
