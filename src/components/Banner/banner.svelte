@@ -1,5 +1,7 @@
 <script>
   import Navbar from "../Navbar/navbar.svelte";
+  import {fade} from "svelte/transition"
+  import { quartInOut } from "svelte/easing"
   export let picDir = "";
   export let title = "";
 </script>
@@ -67,7 +69,7 @@
   }
 </style>
 
-<header class="banner">
+<header class="banner" transition:fade="{{delay: 100, duration: 100 , easing: quartInOut}}">
   <div class="img-container">
     <img src={picDir} alt="" class="banner-photo" />
   </div>

@@ -1,11 +1,12 @@
 <script>
 import * as animateScroll from "svelte-scrollto";
+import {fade} from "svelte/transition"
 
  let y;
 </script>
 <svelte:window bind:scrollY={y}/>
 
-<div class="dropdown" class:show-menu={y>250}>
+<div class="dropdown" class:show-menu={y>250} >
   <button class="dropbtn">
     <!-- svelte-ignore a11y-missing-attribute -->
     <a on:click={() => animateScroll.scrollToTop()}><i class="fas fa-arrow-up icon"></i></a>

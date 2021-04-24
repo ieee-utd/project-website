@@ -1,5 +1,6 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
+import { quadInOut, quintInOut } from "svelte/easing";
   let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
     let y;
   function handleClick(z) 
@@ -18,9 +19,6 @@
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
-}
-.nav-logo{
-  pointer-events: none;
 }
 .logo {
   display: inline-block;
@@ -60,8 +58,8 @@
 <div class="nav-center">
   <ul id="menu">
     <li>
-      <a href="/" class="nav-logo">
-        <img src="../ui/img/IEEE-logo.svg" class="logo" alt="logo" /></a>
+      <div  class="nav-logo">
+        <img src="../ui/img/IEEE-logo.svg" class="logo" alt="logo" /></div>
     </li>
     <li>
       <a href="/" class="nav-link" class:active={routeIsActive('/')}>Home</a>
