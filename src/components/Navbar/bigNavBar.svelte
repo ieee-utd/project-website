@@ -1,7 +1,7 @@
 <script>
   import { routeIsActive } from "svelte-router-spa";
 import { quadInOut, quintInOut } from "svelte/easing";
-  let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
+  let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE WIE"]
     let y;
   function handleClick(z) 
   {
