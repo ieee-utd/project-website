@@ -1,10 +1,10 @@
 <script>
-    import Slide from "../components/slide2.svelte";
+    import Carousel from "../components/Carousel.svelte";
     import NavigationBtn from "../components/navigationBtn.svelte"
     import Navbar from '../components/Navbar/navbar.svelte';
     let list = ["#mission" , "#history"]
     let ironImage = "https://s3.amazonaws.com/ieee-utd/branding/ieeeutd_logo.svg";
-    let bImage = "https://raw.githubusercontent.com/ieee-utd/website-polymer/4bf6cf15218975ce51ab30dade939bf3f8baafd1/ui/img/hero.svg"
+    let images = ['../ui/img/index1.jpg', '../ui/img/index2.JPG', '../ui/img/index3.jpg','../ui/img/about-us3.JPG']
   </script>
   
   <main class="index">
@@ -15,10 +15,7 @@
      <div><img  src={ironImage} alt="" class = "ieee-logo"></div>
 
      <section class="mission section" id = "mission">
-    
-    <div class = "slideshow">
-        <Slide/>
-    </div>
+
          <br>
          <br>
     <div class="center">
@@ -32,6 +29,12 @@
       <a href ="https://groups.google.com/g/ieee-utdallas?pli=1"><button1> <strong>Join our mailing list</strong> </button1> </a> 
       <a href = "/aboutus"><button2> <strong>Learn more</strong> </button2></a>
     </div>
+    </section>
+
+    <section class ="slideShow">
+      <div class="slide-show-center">
+        <Carousel {images}/>
+      </div>
     </section>
   
   </main>
@@ -119,11 +122,10 @@
     border-radius: 5px;
   }
 
-  .slideshow{
-    width:55%;
-    height:55%;
-    justify-content: center;
-    padding-top: 1%;
+  .slideShow{
+    height: 50%;
+		width: 100%;
+		position: absolute;
   }
   
   .navbar{
