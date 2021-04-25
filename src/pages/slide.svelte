@@ -1,10 +1,10 @@
 <script>
-	import { hslide } from '../util/hslide.js';
-    let image1 = "../ui/img/about-us7.JPG";
-    let image2 = "../ui/img/about-us6.JPG";
-    let image3 = "../ui/img/about-us2.JPG";
-    let image4 = "../ui/img/about-us3.JPG";
-    let image5 = "../ui/img/about-us4.jpg";
+	import { hslide } from './hslide.js';
+		let image1 = "../ui/img/about-us7.JPG";
+		let image2 = "../ui/img/about-us6.JPG";
+		let image3 = "../ui/img/about-us2.JPG";
+		let image4 = "../ui/img/about-us3.JPG";
+		let image5 = "../ui/img/about-us4.jpg";
   let slides = [
     {  bg: image1 },
     {  bg: image2 },
@@ -79,6 +79,14 @@
 </div>
 
 <style>
+	
+	:global(html) {
+		font-size: 62.5%;
+	}
+	
+	:global(body) {
+		font-size: 1.4rem;
+	}
 	button {
 		background: transparent;
 		color: #FFF;
@@ -145,10 +153,12 @@
 		width: 100%;
 		height: 100%;
 		background-image: url('../ui/img/about-us1.JPG');  
-		background-position:center ;
-		background-size:cover ;
-		background-repeat: no-repeat ;
-		align-items: center;
+        /* background-attachment:fixed ; */
+        background-position:center ;
+        background-size:cover ;
+        background-repeat: no-repeat ;
+        /* background-position: center; */
+	    align-items: center;
 		justify-content: center;
 		display: flex;
 		text-align: center;

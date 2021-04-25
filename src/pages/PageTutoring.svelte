@@ -5,10 +5,7 @@
 </script>
 
 <style>
-  .section {
-    padding: 3rem 2rem;
-    width: 100%;
-  }
+
   .link {
     color: var(--color-primary);
     text-decoration: underline;
@@ -37,29 +34,28 @@
     margin-bottom: 1.3rem;
     max-width: 70vw;
   }
-  @media screen and (min-width: 776px) {
-    .section {
-      padding: 2rem 4rem;
-    }
-  }
+ 
   .frame-container {
     width: 100%;
-    height: 100%;
+    height: 800px;
   }
   .container-center {
-    margin: 0 auto;
     width: 100%;
-    height: 100vh;
   }
+@media screen and (min-width: 776px) {
+.section {
+  padding: 2rem 4rem;
+}
+}
 </style>
 
 <Banner {title} {picDir} />
 <main class="section">
   <div class="tutoring">
-    <h5 class="heading">
+    <h3 class="heading">
       Due to the COVID-19 outbreak, all tutoring services have moved online
       until further notice.
-    </h5>
+    </h3>
     <div class="tutor-info">
       <p class="tutor-info-contact">
         Join us on our official <a
@@ -81,14 +77,16 @@
   </div>
   <section class="schedule">
     <div class="schedule">
-      <h5 class="heading">Tutor Schedules</h5>
+      <h3 class="heading">Tutor Schedules</h3>
       <p class="sub-heading">
         Check out our calendar below to find tutors for your courses!
       </p>
     </div>
     <div class="container-center">
+      <!-- svelte-ignore a11y-missing-attribute -->
       <iframe
         class="frame-container"
+        loading ="eager"
         src="https://outlook.office365.com/calendar/published/16c7ed4463b14cb88df73535b02c7e4f@UTDallas.edu/0e865a87e7bb471ba2877a3e0ea8f69717838207453034454286/calendar.html" />
     </div>
   </section>
