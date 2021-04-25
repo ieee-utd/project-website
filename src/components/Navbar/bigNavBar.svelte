@@ -3,7 +3,7 @@
   import {scale} from "svelte/transition"
   import { quadInOut, quintInOut } from "svelte/easing";
   document.body.style.overflow = "scroll"
-  let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE WIE"]
+  let list = ["#technical committee","#the forge","#events comittee","#robotics","#ieee wie"]
     let y;
   function handleClick(z) 
   {
@@ -46,14 +46,20 @@
   display: none;
   position: absolute;
   background:transparent;
-  min-width: 115px;
+  left:-30%;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(247, 247, 247, 0.2);
   z-index: 1;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+.drop-down-link{
+  font-size:0.85rem;
+  text-transform: uppercase;
+  font-weight: 600 ;
 
-.dropdown-content a:hover {color: var(--color-white);}
+
+}
 .dropdown:hover .dropdown-content {display: block;}
 </style>
 
@@ -84,7 +90,7 @@
           {#each list as item}
           <div>
               <!-- svelte-ignore a11y-missing-attribute -->
-              <button on:click={() => handleClick(item.replace(/\s+/g, ''))}> <strong class = "nav-link">{item.slice(1)}</strong></button> 
+              <button on:click={() => handleClick(item.replace(/\s+/g, ''))}> <strong class = "nav-link drop-down-link">{item.slice(1)}</strong></button> 
           </div>
 
           {/each}

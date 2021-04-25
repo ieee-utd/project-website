@@ -2,7 +2,7 @@
   import Banner from "../components/Banner/banner.svelte";
   import Grid from "../components/grid.svelte";
   let title = "Eta Kappa Nu Honor Society";
-  let picDir = "../ui/img/forge-program.jpg";
+  let picDir = "../ui/img/hkn.jpg";
   let grid = [6, 4];
 </script>
 
@@ -24,19 +24,6 @@
     padding-bottom: 1%;
   }
 
-  div {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-  }
-
-  div span:first-child {
-    margin-right: 20px;
-  }
-
-  input {
-    width: 100%;
-  }
 </style>
 
 <Banner {picDir} {title} id="top" />

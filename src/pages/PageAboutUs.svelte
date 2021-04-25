@@ -18,6 +18,13 @@
   .content {
     margin-top: 1rem;
   }
+
+  .slide-show-center{
+    text-align: center;
+  }
+  .slide-show-center h3{
+    margin-bottom:2rem;
+  }
   @media screen and (min-width: 776px) {
 
   }
@@ -35,7 +42,6 @@
 
 <main id="about">
   <Banner {picDir} {title}  id="top" />
-<div class="wrapper-color-white">
   <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
@@ -55,10 +61,9 @@
           learn and develop connections with other engineers within their fields
           of interest
         </p>
-      </div>
     </div>  
+    </div>
   </section>
-  </div>
   <!-- history -->
   <section class="history section" id="history">
     <div class="section-center">
@@ -81,6 +86,9 @@
   </section>
   <!-- slide show -->
   <section class ="slideShow section" style="max-width:900px">
-  <Carousel {images}/>
+  <div class="slide-show-center">
+    <h3 class="title">Gallery</h3>
+    <Carousel {images}/>
+  </div>
 </section>
 </main>

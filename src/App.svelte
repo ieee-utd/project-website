@@ -74,7 +74,6 @@
   }
   :global(.wrapper-color-white){
     width:100%;
-    /* background:#fff; */
   }
   :global(.title){
     text-transform: uppercase;

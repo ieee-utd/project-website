@@ -56,10 +56,11 @@
   }
   @media screen and (max-width: 776px) {
     .banner {
-      height: 30vh;
+      height: 200px;
     }
     .banner-title {
       font-size: 2rem;
+      max-width:375px;
     }
     .banner-wrapper{
       padding-top:1rem;

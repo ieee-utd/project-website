@@ -31,7 +31,7 @@
 <main id = program>
 <NavigationBtn {list} />
 <Banner {picDir} {title} id="top" />
-<section  in:fade="{{ y: 200, duration: 750 }}" class="tech commitee section" id = "Technical">
+<section  in:fade="{{ y: 200, duration: 750 }}" class="tech commitee section" id = "technicalcommittee">
   <div class="container">
     <div >
       <h2 id="tech" class = "title" >Technical Committee </h2>
@@ -42,7 +42,7 @@
     </div>
   </section>
 
-  <section in:fade="{{ y: 200, duration: 750 }}" class="forge section" id = "Forge">
+  <section in:fade="{{ y: 200, duration: 750 }}" class="forge section" id = "theforge">
   <div class="container">
   <h2 class = "title">The Forge</h2>
   <p>
@@ -63,7 +63,7 @@
   </div>
   </section>
 
-<section in:fade="{{ y: 200, duration: 750 }}" class="events committee section" id = "Events">
+<section in:fade="{{ y: 200, duration: 750 }}" class="events committee section" id = "eventscomittee">
   <div class="container">
   <h2 class = "title">Events Committee</h2>
   <div class="section-center">
@@ -73,7 +73,7 @@
   </div>
 </section>
 
-<section in:fade="{{ y: 200, duration: 750 }}" class="robotics section" id = "Robotics">
+<section in:fade="{{ y: 200, duration: 750 }}" class="robotics section" id = "robotics">
   <div class="container">
   <h2 class = "title">Robotics</h2>
   <p>
@@ -84,7 +84,7 @@
 </section>
 
 
-<section in:fade="{{ y: 200, duration: 750 }}" class="ieee wie section" id = "IEEEWIE">
+<section in:fade="{{ y: 200, duration: 750 }}" class="ieee wie section" id = "ieeewie">
   <div class="container">
   <h2 class = "title">IEEE WIE </h2>
   <p>
