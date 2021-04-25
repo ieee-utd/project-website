@@ -10,7 +10,6 @@
   .banner-title {
     color: var(--color-white);
     letter-spacing: 5px;
-    font-weight: 700;
     position: absolute;
     z-index: 3;
     bottom: 15px;

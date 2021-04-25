@@ -6,7 +6,7 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Rubik:wght@700;800&display=swap');
   :root {
     --color-primary: #c75b12;
     --color-primary-blue: #0072a6;
@@ -20,7 +20,7 @@
     --color-accent: #f2be32;
     --color-paper: #eeeeee;
     --color-white: #fff;
-    --font-head: "Rubik";
+    --font-head: 'Rubik';
     --font-main: 'Roboto', sans-serif;
     --font-mono: "Roboto Mono", monospace;
     --transition: all 0.5s ease-in-out;
@@ -47,7 +47,7 @@
   }
   :global(h1,h2,h3,h4,h5){
     font-family: var(--font-head);
-    font-weight: 700;
+    font-weight: 800;
   }
   :global(h1){
     font-size:2.4rem;
