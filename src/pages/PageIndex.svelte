@@ -4,20 +4,24 @@
     import Navbar from '../components/Navbar/navbar.svelte';
     let list = ["#mission" , "#history"]
     let ironImage = "https://s3.amazonaws.com/ieee-utd/branding/ieeeutd_logo.svg";
-    let images = ['../ui/img/index1.jpg', '../ui/img/index2.JPG', '../ui/img/index3.jpg','../ui/img/about-us3.JPG']
+    let images = ['../ui/img/1.jpg', '../ui/img/2.JPG', '../ui/img/3.jpg','../ui/img/4.JPG']
   </script>
   
   <main class="index">
     <NavigationBtn {list} />
-    <div class="navbar">
+    
     <Navbar/>
-    </div>
+
      <div><img  src={ironImage} alt="" class = "ieee-logo"></div>
 
-     <section class="mission section" id = "mission">
+     <section class ="slideShow section" style = "max-width: 1200px; margin-top: -20px">
+      <div class="slide-show-center">
+        <Carousel {images}/>
+      </div>
+    </section>
 
-         <br>
-         <br>
+     <section class="mission section" id = "mission">
+       
     <div class="center">
             <strong> We are the student chapter of the Institute of Electrical and Electronics <br> 
               Engineers (IEEE) at The University of Texas at Dallas (UTD).</strong>
@@ -30,34 +34,25 @@
       <a href = "/aboutus"><button2> <strong>Learn more</strong> </button2></a>
     </div>
     </section>
-
-    <section class ="slideShow">
-      <div class="slide-show-center">
-        <Carousel {images}/>
-      </div>
-    </section>
   
   </main>
   
   <style>
-  
-  
-  
     .section {
       width: 100%;
     }
     .mission {
       background:var(--color-gray);
+      margin-top: -80px;
     }
 
     .center {
     position: relative;
     color:white;
     font-size:1.0rem;
-    top: 120;
     width: 100%;
     text-align: center;
-
+    padding-top: 0%;
   }
 
   .ieee-logo{
@@ -67,7 +62,6 @@
     height:120px;
     z-index: 3;
     top: 10%;
-
   }
 
 
@@ -75,7 +69,7 @@
       background: linear-gradient(to top,rgb(0, 0, 0, .800) , rgba(29, 28, 28));
       z-index: 0;
       position: relative;
-      padding-bottom: 180px;
+      padding-bottom: 50px;
   }
   .index::after{
     content: "";
@@ -95,7 +89,7 @@
     margin: 0;
     position: relative;
     top: 50%;
-    left: 42.5%;
+    left: 37.5%;
     height: 10rem;
 		width: 200px;
 		background-color: rgb(250, 97, 8);
@@ -111,7 +105,7 @@
     padding: 15px 15px;
     position: relative;
     top: 50%;
-    left: 42%;
+    left: 36%;
     height: 20rem;
 		width: 200rem;
 		background-color: rgb(250, 97, 8);
@@ -121,15 +115,6 @@
     text-align: center;
     border-radius: 5px;
   }
-
-  .slideShow{
-    height: 50%;
-		width: 100%;
-		position: absolute;
-  }
   
-  .navbar{
-    padding-top: 1.65%;
-  }
   </style>
   

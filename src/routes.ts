@@ -1,4 +1,5 @@
 import PageIndex from "./pages/PageIndex.svelte";
+import PageEvents from "./pages/PageEvents.svelte";
 import PageNotFound from "./pages/PageNotFound.svelte";
 import PagePrograms from "./pages/PagePrograms.svelte";
 import PageAboutUs from "./pages/PageAboutUs.svelte";
@@ -12,6 +13,7 @@ export const routes = [
   { name: "programs", component: PagePrograms },
   { name: "aboutUs", component: PageAboutUs },
   { name: "contact", component: PageContact },
+  { name: "events", component: PageEvents },
   { name: "hkn", component: PageHKN },
   { name: "ourTeam", component: PageOurTeam },
   { name: "tutoring", component: PageTutoring },

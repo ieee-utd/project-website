@@ -63,7 +63,7 @@
   </div>
   </section>
 
-<section in:fade="{{ y: 200, duration: 750 }}" class="events committee section" id = "eventscomittee">
+<section in:fade="{{ y: 200, duration: 750 }}" class="events committee section" id = "eventscommittee">
   <div class="container">
   <h2 class = "title">Events Committee</h2>
   <div class="section-center">
