@@ -1,30 +1,22 @@
 <script>
   import { fly } from "svelte/transition";
-  import {
-    mdiFacebook,
-    mdiDiscord,
-    mdiTwitter,
-    mdiInstagram,
-    mdiLinkedin,
-  } from "@mdi/js";
-  import MdiIcon from "./MdiIcon.svelte";
+  let year;
+  year = new Date().getFullYear();
 </script>
 
 <style>
   footer {
     width: 100%;
     min-height: 50vh;
-    background: white;
+    background: #fff;
   }
   .sponsor-logo-container {
     padding: 1rem;
   }
-  .title {
-    color: #222;
-    font-size: 1.2rem;
-    /* text-transform: capitalize; */
-    font-weight: 700;
+  .footer-title {
+    color: var(--color-paper-grey);
     text-align: center;
+    padding-top:1.7rem;
   }
   .logo {
     display: block;
@@ -40,44 +32,45 @@
     text-align: center;
     padding-bottom: 2rem;
   }
-
-  .copyright {
-    margin-top: 1rem;
+.icon{
+ width: 2rem;
+ height:2.5rem;
+ display:inline-block;
+ font-size:2rem;
+ padding-left:0.4rem;
+ color:#222;
+ transition: var(--transition);
+}
+.icon:hover{
+ transform: translateY(-10px);
+}
+.copyright {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 776px) {
+  .logo {
+    display: inline-block;
   }
-  @media screen and (min-width: 776px) {
-    .logo {
-      display: inline-block;
-    }
-    .sponsor-logo-container {
-      text-align: center;
-    }
+  .sponsor-logo-container {
+    text-align: center;
   }
+}
 </style>
 
 <footer class="footer">
   <div class="sponsor-logo-container">
-    <p class="title center">Thank you to the IEEE UTD sponsors</p>
+    <h4 class="footer-title center">Thank you to the IEEE UTD sponsors</h4>
     <div class="container-wrapper">
       <img src="../ui/img/texas-instrument.jpg" alt="" class="logo" />
       <img src="../ui/img/murata.png" alt="" class="logo" />
     </div>
   </div>
   <div class="socials-container">
-    <a href="https://www.facebook.com/" target="_blank"><MdiIcon
-        icon={mdiFacebook}
-        class="icon" /></a>
-    <a href="https://discord.com/" target="_blank"><MdiIcon
-        icon={mdiDiscord}
-        class="icon" /></a>
-    <a href="https://twitter.com/" target="_blank"><MdiIcon
-        icon={mdiTwitter}
-        class="icon" /></a>
-    <a href="https://www.instagram.com/" target="_blank"><MdiIcon
-        icon={mdiInstagram}
-        class="icon" /></a>
-    <a href="https://www.linkedin.com/" target="_blank"><MdiIcon
-        icon={mdiLinkedin}
-        class="icon" /></a>
-    <p class="copyright">&copy; 2021 IEEE UTD. All rights reserved</p>
+    <a href="https://www.facebook.com/IEEEUTD" target="_blank"><i class="fab fa-facebook icon"></i></a>
+    <a href="https://discord.gg/n8zc6KbA" target="_blank"><i class="fab fa-discord icon"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    <a href="https://www.linkedin.com/company/ieee-utd/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+    <p class="copyright">&copy; {year} IEEE UTD. All rights reserved</p>
   </div>
 </footer>

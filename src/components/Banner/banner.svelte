@@ -1,26 +1,19 @@
 <script>
   import Navbar from "../Navbar/navbar.svelte";
-  import { quintOut } from "svelte/easing";
-  import { fly } from "svelte/transition";
+  import {fade,scale} from "svelte/transition"
+  import { quartInOut, quintInOut } from "svelte/easing"
   export let picDir = "";
   export let title = "";
-  export let subtitle = "";
 </script>
 
 <style>
-  .title {
+  .banner-title {
     color: var(--color-white);
     letter-spacing: 5px;
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: var(--font-head);
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: 15px;
     text-transform: uppercase;
-  }
-  .subtitle {
-    color: var(--color-white);
   }
   .banner-photo {
     width: 100%;
@@ -32,9 +25,9 @@
     z-index: 3;
     position: absolute;
     top: 0;
-    padding: 2rem;
     height: 100%;
     width: 100%;
+    padding-left:2rem;
   }
   .img-container {
     height: 100%;
@@ -56,31 +49,32 @@
   }
   .banner {
     width: 100%;
-    height: 50vh;
-    position: relative;
+    height: 320px;
+    position: relative; 
     background: transparent;
   }
   @media screen and (max-width: 776px) {
     .banner {
-      height: 30vh;
+      height: 200px;
     }
-    .title {
+    .banner-title {
       font-size: 2rem;
+      max-width:375px;
+    }
+    .banner-wrapper{
+      padding-top:1rem;
     }
   }
   @media screen and (min-width: 776px) {
-    .banner-wrapper {
-      padding: 2rem 4rem;
-    }
   }
 </style>
 
-<header class="banner">
-  <div class="img-container">
+<header class="banner" in:fade="{{delay: 100, duration: 800 , easing: quartInOut}}">
+  <div class="img-container" >
     <img src={picDir} alt="" class="banner-photo" />
   </div>
-  <div class="banner-wrapper section">
+  <div class="banner-wrapper">
     <Navbar />
-    <h1 class="title">{title} <span class="subtitle">{subtitle}</span></h1>
+    <h2 class="banner-title">{title}</h2>
   </div>
 </header>

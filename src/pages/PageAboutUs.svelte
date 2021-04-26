@@ -1,22 +1,14 @@
 <script>
   import Banner from "../components/Banner/banner.svelte";
-  import NavigationBtn from "../components/navigationBtn.svelte";
+  import Carousel from "../components/Carousel.svelte";
   import Slide from "../components/slide.svelte";
-  let list = ["#mission", "#history"];
   let picDir = "../ui/img/forge-about-us.jpg";
-  let title = "about";
-  let subtitle = "us";
+  let images = ['../ui/img/about-us7.JPG', '../ui/img/about-us2.JPG', '../ui/img/about-us6.JPG','../ui/img/about-us3.JPG', '../ui/img/about-us4.jpg']
+  let title = "about us";
 </script>
 
 <style>
-  .section {
-    padding: 3rem 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .mission {
-    background: var(--color-white);
-  }
+
   .img-container {
     max-width: 587px;
   }
@@ -26,36 +18,15 @@
   .content {
     margin-top: 1rem;
   }
-  .title {
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    font-family: "Rubik", sans-serif;
-    color: #060247;
-    margin-bottom: 2rem;
-    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
-      no-repeat;
-    transition: 0.5s;
-  }
-  .title:hover {
-    --d: 50%;
-  }
 
-  .history .content p {
-    color: black;
+  .slide-show-center{
+    text-align: center;
   }
-  .content p {
-    font-family: "Rubik", sans-serif;
-    line-height: 2.2;
-    color: black;
-    font-family: "Lato", sans-serif;
+  .slide-show-center h3{
+    margin-bottom:2rem;
   }
   @media screen and (min-width: 776px) {
-    .section {
-      padding: 3rem 4rem;
-    }
+
   }
   @media screen and (min-width: 992px) {
     .section-center {
@@ -66,22 +37,15 @@
       grid-column-gap: 40px;
     }
 
-    .slideshow{
-    width:90%;
-    height:90%;
-    padding-left:13%;
-  }
   }
 </style>
 
 <main id="about">
-  <NavigationBtn {list} />
-  <Banner {picDir} {title} {subtitle} id="top" />
+  <Banner {picDir} {title}  id="top" />
   <section class="mission section" id="mission">
     <div class="section-center">
       <div class="img-container">
         <img src="../ui/img/about-us.JPG" class="photo" alt="statement" />
-
       </div>
       <div class="content">
         <h3 class="title">mission statement</h3>
@@ -97,7 +61,7 @@
           learn and develop connections with other engineers within their fields
           of interest
         </p>
-      </div>
+    </div>  
     </div>
   </section>
   <!-- history -->
@@ -120,9 +84,11 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class = "slideshow">
-        <Slide/>
-    </div>
-  </section>
+  <!-- slide show -->
+  <section class ="slideShow section" style="max-width:900px">
+  <div class="slide-show-center">
+    <h3 class="title">Gallery</h3>
+    <Carousel {images}/>
+  </div>
+</section>
 </main>
