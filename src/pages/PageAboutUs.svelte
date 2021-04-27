@@ -87,7 +87,7 @@
   <!-- slide show -->
   <section class ="slideShow section" style="max-width:900px">
   <div class="slide-show-center">
-    <h3 class="title">Gallery</h3>
+    <h3 class="title">Our Members</h3>
     <Carousel {images}/>
   </div>
 </section>
