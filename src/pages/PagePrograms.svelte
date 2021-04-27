@@ -3,7 +3,7 @@
   import NavigationBtn from "../components/navigationBtn.svelte";
   import { fade } from 'svelte/transition';
   let picDir = "../ui/img/forge-program.jpg";
-  let title = "program";
+  let title = "programs";
   let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
 
   let y;
