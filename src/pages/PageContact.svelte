@@ -178,9 +178,9 @@
       </div>
       <div class="socials-container">
         <a href="https://www.facebook.com/IEEEUTD" target="_blank"><i class="fab fa-facebook icon"></i></a>
-        <a href="https://discord.gg/n8zc6KbA" target="_blank"><i class="fab fa-discord icon"></i></a>
+        <a href="https://discord.gg/aqw6bjNR2J" target="_blank"><i class="fab fa-discord icon"></i></a>
         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+        <a href="https://www.instagram.com/ieeeutd/" target="_blank"><i class="fab fa-instagram icon"></i></a>
         <a href="https://www.linkedin.com/company/ieee-utd/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
       </div>
     </article>
