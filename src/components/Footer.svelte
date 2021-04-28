@@ -30,7 +30,6 @@
     color: #222;
     text-transform: capitalize;
     text-align: center;
-    padding-bottom: 2rem;
   }
 .icon{
  width: 2rem;
