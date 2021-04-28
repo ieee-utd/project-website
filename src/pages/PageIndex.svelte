@@ -74,7 +74,7 @@
   }
   @media screen and (min-width:776px){
     .section{
-      padding-top:0!important;
+      padding-top:2px!important ;
     }
   }
   </style>
