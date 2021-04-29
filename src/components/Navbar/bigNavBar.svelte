@@ -59,15 +59,15 @@
 .drop-down-link{
   font-size:0.85rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 600 ;
   color: var(--color-paper-grey);
   transition: 1s ease-in linear;
 }
-.dropdown:hover {
+.drop-down-link:hover {
   color: var(--color-white);
 }
 
-.dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
 
 </style>
 
