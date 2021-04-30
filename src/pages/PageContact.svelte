@@ -175,7 +175,7 @@
         <a href="https://discord.com/" target="_blank"><MdiIcon
             icon={mdiDiscord}
             class="icon" /></a>
-        <a href="https://twitter.com/" target="_blank"><MdiIcon
+        <a href="https://twitter.com/ieeeutd" target="_blank"><MdiIcon
             icon={mdiTwitter}
             class="icon" /></a>
         <a href="https://www.instagram.com/" target="_blank"><MdiIcon
