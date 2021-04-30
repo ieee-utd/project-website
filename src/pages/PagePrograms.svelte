@@ -39,8 +39,20 @@
       keep mutually beneficial relations with other clubs within UTD.
 
     </p>
+    <section id="section-2">
+      <h1>The Forge</h1>
+      <p>
+        The Forge is a multidisciplinary project-focused innovation hub focusing on developing 
+        the next generation of creative and technical leaders while solving engineering challenges 
+        in the community. All our projects are made by UTD students for UTD students.
+        Students are placed in interdisciplinary teams of 4-6 and challenged to complete 10-week projects. 
+        Past projects integrated web development with prototyping and electrical engineering skills to build 
+        devices for the UTDallas Makerspace.
+  
+      </p>
+    </section>
   </section>
-  <section id="section-2">
+  <section id="section-3">
     <h1>Events Committee</h1>
     <p>
       The Events Committee plans and organizes events for IEEE, whether it is working 
@@ -54,7 +66,7 @@
  
     </p>
   </section>
-  <section id="section-3">
+  <section id="section-4">
     <h1>Robotics</h1>
     <p>
       The IEEE UTD Robotics Team participates in the IEEE Region 5 Student Robotics 
@@ -66,7 +78,7 @@
       or the next Robotics Meeting, or DM us on Discord for ways to get involved.
     </p>
   </section>
-  <section id="section-4">
+  <section id="section-5">
     <h1>IEEE's WIE UTD</h1>
     <p>
       Women In Engineering (WIE UTD) is an initiative to increase the representation 
