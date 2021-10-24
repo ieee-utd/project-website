@@ -14,6 +14,8 @@
   }
   .photo {
     width: 100%;
+    max-width: 587px;
+    
   }
   .content {
     margin-top: 1rem;
