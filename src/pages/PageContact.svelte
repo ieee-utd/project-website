@@ -98,8 +98,8 @@
     width: 2rem;
     height:2.5rem;
     display:inline-block;
-    font-size:2rem;
-    padding-left:0.4rem;
+    font-size:1.5rem;
+    padding-left:0.7rem;
     color:#222;
     transition: var(--transition);
   }
