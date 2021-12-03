@@ -32,7 +32,7 @@
     text-align: center;
   }
 .icon{
- width: 2rem;
+ width: 3rem;
  height:2.5rem;
  display:inline-block;
  font-size:2rem;
