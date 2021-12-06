@@ -89,7 +89,7 @@
             Machinery (ACM), and many more! By leveraging both IEEE and UTD
             resources, we help students to enforce engineering knowledge they
             learn and develop connections with other engineers within their fields
-            of interest
+            of interest.
           </p>
         </div>
       </div>
