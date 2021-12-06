@@ -22,8 +22,8 @@
   .column {
     float: left;
     width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
   }
   
   img {
