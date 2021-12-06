@@ -1,13 +1,18 @@
 <script>
   import Navbar from "../Navbar/navbar.svelte";
   import {fade,scale} from "svelte/transition"
-  import { quartInOut, quintInOut } from "svelte/easing"
+  import { quartInOut, quintInOut } from "svelte/easing";
   export let picDir = "";
   export let title = "";
 </script>
 
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
 <style>
   .banner-title {
+    font-family: 'Roboto', sans-serif;
     color: var(--color-white);
     letter-spacing: 5px;
     position: absolute;

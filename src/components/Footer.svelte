@@ -30,10 +30,9 @@
     color: #222;
     text-transform: capitalize;
     text-align: center;
-    padding-bottom: 2rem;
   }
 .icon{
- width: 2rem;
+ width: 3rem;
  height:2.5rem;
  display:inline-block;
  font-size:2rem;
@@ -67,9 +66,9 @@
   </div>
   <div class="socials-container">
     <a href="https://www.facebook.com/IEEEUTD" target="_blank"><i class="fab fa-facebook icon"></i></a>
-    <a href="https://discord.gg/n8zc6KbA" target="_blank"><i class="fab fa-discord icon"></i></a>
-    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icon"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+    <a href="https://discord.gg/aqw6bjNR2J" target="_blank"><i class="fab fa-discord icon"></i></a>
+    <a href="https://twitter.com/ieeeutd" target="_blank"><i class="fab fa-twitter icon"></i></a>
+    <a href="https://www.instagram.com/ieeeutd/" target="_blank"><i class="fab fa-instagram icon"></i></a>
     <a href="https://www.linkedin.com/company/ieee-utd/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
     <p class="copyright">&copy; {year} IEEE UTD. All rights reserved</p>
   </div>

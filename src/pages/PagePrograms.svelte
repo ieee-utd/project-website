@@ -3,7 +3,7 @@
   import NavigationBtn from "../components/navigationBtn.svelte";
   import { fade } from 'svelte/transition';
   let picDir = "../ui/img/forge-program.jpg";
-  let title = "program";
+  let title = "programs";
   let list = ["#Technical","#Forge","#Events","#Robotics","#IEEE"]
 
   let y;
@@ -46,19 +46,8 @@
   <div class="container">
   <h2 class = "title">The Forge</h2>
   <p>
-    dus nesciunt ut harum veniam repudiandae dolores natus quasi labore,
-    molestiae pariatur molestias facere quas voluptatibus corrupti vitae? Ipsa
-    molestias officiis reprehenderit voluptatum a magni fugit, quos doloribus
-    excepturi placeat voluptates nemo minus nostrum repellendus magnam
-    possimus corrupti exercitationem quasi porro iure, asperiores expedita
-    illo veritatis! Deleniti modi labore, nulla quo autem qui earum illum?
-    Praesentium impedit quasi quibusdam alias cumque nisi dignissimos odit
-    modi, soluta, iure hic illum optio amet assumenda consequatur officiis
-    numquam error harum quis quos, nam nemo neque? Hic quas qui repellendus
-    deserunt, laborum sint quos at nostrum quisquam ipsam inventore neque. Aut
-    vitae accusamus deleniti quaerat pariatur nobis ullam, quos sint omnis
-    officia provident architecto eveniet. Placeat quos accusamus dolores
-    laudantium.
+    The Forge is a multidisciplinary project-focused innovation hub focusing on developing the next generation of creative and technical leaders while solving engineering challenges in the community. All our projects are made by UTD students for UTD students.
+    Students are placed in interdisciplinary teams of 4-6 and challenged to complete 10-week projects. Past projects integrated web development with prototyping and electrical engineering skills to build devices for the UTDallas Makerspace.
   </p>
   </div>
   </section>

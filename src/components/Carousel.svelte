@@ -3,7 +3,7 @@
  export let images = [];
  import {ChevronLeftIcon, ChevronRightIcon} from "svelte-feather-icons";
 </script>
-<Carousel perPage=1 autoplay=4000 duration=2000 draggable=false>
+<Carousel perPage=1 autoplay=4000 duration=3000 draggable=false multipleDrag=false>
  <!-- <span class="control" slot ="left-control"><ChevronLeftIcon/></span> -->
   {#each images as image}
     <div class="slide-content">

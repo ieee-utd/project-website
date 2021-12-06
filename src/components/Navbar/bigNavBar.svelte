@@ -66,6 +66,10 @@
 .drop-down-link:hover {
   color: var(--color-white);
 }
+.drop-down-link:hover {
+  color: var(--color-white);
+}
+
 .dropdown:hover .dropdown-content {display: block;}
 
 </style>
