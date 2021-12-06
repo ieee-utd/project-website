@@ -46,7 +46,7 @@
   .heading{
       font-weight: bold;
       font-size: 2rem;
-      padding-left: 2rem;
+      padding-left: 3rem;
       padding-bottom: 1rem;
       margin-bottom: 2rem;
       text-transform: uppercase;
