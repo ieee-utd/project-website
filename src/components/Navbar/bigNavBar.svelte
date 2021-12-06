@@ -66,6 +66,9 @@
 .drop-down-link:hover {
   color: var(--color-white);
 }
+.drop-down-link:hover {
+  color: var(--color-white);
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -109,7 +112,7 @@
       <div class="dropdown-content">
           {#each list as item}
           <div>
-            <button on:click={() => handleClick(item.replace(/\s+/g, ''))}> <strong class = "drop-down-link">{item.slice(1)}</strong></button>
+              <button on:click={() => handleClick(item.replace(/\s+/g, ''))}> <strong class = "drop-down-link">{item.slice(1)}</strong></button> 
           </div>
 
           {/each}
